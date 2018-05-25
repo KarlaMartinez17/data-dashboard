@@ -283,7 +283,7 @@ Conforme las entrevistas que se realizaron y analizando la lluvia de ideas inici
 
 ## PROTOTIPADO
 
-![Mock up 1](assets/images/mockup-one.jpg)
+![Mock up 1](assets/images/mockup1.png)
 
 ![Mock up 2](assets/images/mockup-two.jpg)
 
