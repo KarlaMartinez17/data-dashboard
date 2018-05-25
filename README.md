@@ -5,254 +5,239 @@
 **LLUVIA DE IDEAS**
 
 
-Se indago sobre las posibles causas que pueden generar la necesidad del Data Dashboard y en la lluvia de ideas de los posibles problemas que pueden tener los trading managers y el equipo en general se mencionaron las siguientes: los datos que manejan no están organizados de manera eficiente, encontrar información/alumnas no resulta muy fácil, les gustaría tener la posibilidad de separar la información para poder manejarla por secciones y así se procese más fácilmente, el tiempo de navegación puede ser un problema ya que se tarda mucho tiempo buscando la información, se tiene mucha información y manejarla toda al mismo tiempo puede resultar muy abrumador.
+Se indagó sobre las posibles causas que pueden generar la necesidad del Data Dashboard y en la lluvia de ideas de los posibles problemas que pueden tener los training managers y el equipo en general, se mencionaron las siguientes: los datos que manejan no están organizados de manera eficiente, encontrar información/alumnas no resulta muy fácil, les gustaría tener la posibilidad de separar la información para poder manejarla por secciones y así se procese más fácilmente, el tiempo de navegación puede ser un problema ya que se tarda mucho tiempo buscando la información, se tiene mucha información y manejarla toda al mismo tiempo puede resultar muy abrumador.
 
 **ENCUESTAS**
 
 Entrevista a Karla Rejas, Training Manager de Laboratoria en la sede de la Ciudad de Guadalajara, dos años y ocho meses laborando para la institución.
 
-Discusión: Demasiada información para revisar.
 
-Temas importantes:
+**¿Actualmente como recaudas información de las estudiantes?**
 
-* Número de estudiantes inscritas.
-* Número de estudiantes que desertaron.
-* Número y % de estudiantes que pasan el criterio mínimo de evaluación.
-* Promedio de notas por sprint (Final).
-* Promedio de notas HSE.
-* Promedio de notas técnicas.
+Por medio de excel y formularios.
 
 
-Pregunta: Actualmente como recaudas dicha información.
-
-Número de estudiantes inscritas: Se llenan formularios con la misma información que las alumnas ya llenaron “online”.
-
-Número de estudiantes que desertaron: Se tienen los mismo formularios que con las alumnas que se inscribieron, salvo que al momento de desertar se llenan otros formularios que sirven de retrospectiva para el equipo de “producto”. La training manager solamente tiene los números y las causas de las alumnas que desertaron.
-
-Porcentaje de estudiantes que pasan el criterio mínimo de evaluación: Para este porcentaje se tienen tienen en cuenta los promedios de notas por sprint, el promedio de notas de HSE y el promedio de notas técnicas. Juntos estos promedios hacen un promedio final que se pasa a un excel nuevo en donde se resume el porcentaje y se sabe si la alumna saca un 70% que es el mínimo requerido para pasar o saca menos o saca mas. En este excel se establecen todos los criterios a evaluar.  Lo que le facilita a la Training manager analizar en que aspectos pudiera tener un área de oportunidad la alumna.
-
-Notas:
-1. Lo mas difícil es emparejar estos resultados con el código de alumna de cada alumna.
-2. El formato de excel se le facilita mucho a la training manager.
-3. Las notas finales se sacan por Sprint.
-4. Se saca el promedio de todos los “quizes”
-5. No utiliza gráficas pero seria muy positivo.
-6. El trabajo tiene tanta información que es muy pesado para las computadoras, tiene que usar una computadora con un alto rendimiento
-7. Le gustaría una gráfica que muestre todos los aspectos a evaluar de forma visual para saber cual es el área en donde la alumna esta batallando para desarrollarse.
-8. Gráficas que incluyan los puntos de como están las estudiantes en todas las áreas de desarrollo en resumen y por sprint y con promedio.
-9. Promedio total del grupo por sprint.
-10. Accede a toda la información por medio de excel y form.
-11. Todos los filtros son por sede y por generación.
-
-
-
-* ¿Con que frecuencia tienes que acceder a toda esta data?
+**¿Con que frecuencia tienes que acceder a toda esta data?**
 
 Todos los días.
 
-* ¿Cuanto tiempo te lleva realizar una búsqueda?
+**¿Cuánto tiempo te lleva realizar una búsqueda?**
 
 Depende del tipo de información que necesito encontrar.
 
-* ¿Sueles acceder a información de otras sedes?
+**¿Sueles acceder a información de otras sedes?**
 
 Si, todo el tiempo, utilizando sus carpetas de Drive.
 
-* ¿Cuál es tu sentir al tener que invertir tanto tiempo?
+**¿Cuál es tu sentir al tener que invertir tanto tiempo?**
 
- Me estresa, no por lo difícil, sino porque siento que es una pérdida de tiempo y yo podría estar dando más tiempo en hacer otras cosas para ustedes, para las estudiantes y no estar metiéndome a hacer miles de excel de hecho, aquí (sede Gdl), se nos hace fácil, porque a mi se me da mucho de trabajar con hoja de cálculo, pero en otras sedes sí se, incluso la asistencia es de forma manual, yo digamos he tratado de automatizar todo, aun así, vean el tiempo que me toma, todo está automatizado, las asistencias en otro lado cuentan una por una, digamos cuentan y le van restando una, acá el conteo está automatizado, el conteo se degrada, pero ¿porque?, porque a otras TM se les hace difícil y no necesariamente tienes que saber eso, las habilidades son diferentes y se hace como un poco pesado ya que invierten muchísimo tiempo
+ Me estresa, no por lo difícil, sino porque siento que es una pérdida de tiempo y yo podría estar dando más tiempo en hacer otras cosas para ustedes, para las estudiantes y no estar metiéndome a hacer miles de excel de hecho, aquí (sede Gdl), se nos hace fácil, porque a mi se me da mucho de trabajar con hoja de cálculo, pero en otras sedes sí se, incluso la asistencia es de forma manual, yo digamos he tratado de automatizar todo, aun así, vean el tiempo que me toma, todo está automatizado, las asistencias en otro lado cuentan una por una, digamos cuentan y le van restando una, acá el conteo está automatizado, el conteo se degrada, pero ¿porque?, porque a otras TM se les hace difícil y no necesariamente tienes que saber eso, las habilidades son diferentes y se hace como un poco pesado ya que invierten muchísimo tiempo.
 
-Deseos de la aplicación:
+ **Temas importantes:**
 
-Algo parecido al DashBoard de Laboratoria.
-Gustos minimalistas.
-Mientra mas simple mejor.            
-Limpio, ordenado.
-Letras legibles.
-Blanco.
-Que sea publica la data para que el alumno pueda ponerse en contacto con la training manager en cuanto vea cambios en sus calificaciones.
+ * Número de estudiantes inscritas.
+ * Número de estudiantes que desertaron.
+ * Número y % de estudiantes que pasan el criterio mínimo de evaluación.
+ * Promedio de notas por sprint (Final).
+ * Promedio de notas HSE.
+ * Promedio de notas técnicas.
+
+ **Notas:**
+
+ 1. Lo mas difícil es emparejar estos resultados con el código de alumna de cada alumna.
+ 2. El formato de excel se le facilita mucho a la training manager pero no es optimo.
+ 3. Las notas finales se sacan por Sprint.
+ 4. Se saca el promedio de todos los “quizzes”
+ 5. No utiliza gráficas pero seria muy positivo.
+ 6. La data es demasiada información, la cuál es muy pesada para las computadoras.
+ 7. Le gustaría una gráfica que muestre todos los aspectos a evaluar de forma visual para saber cuál es el área en dónde la alumna está teniendo problemas para desarrollarse.
+ 8. Gráficas que incluyan las notas de las estudiantes en las áreas de desarrollo, en resumen, por sprint y promedio.
+ 9. Accede a toda la información por medio de excel y form.
+ 10. Todos los filtros son por sede y por generación.
+
 
 ***
 
-*Nombre Completo
+*Nombre Completo:*
 Lucile Baratier
 
-*Sede a la que perteneces.
+*Sede a la que perteneces:*
 CDMX
 
-*Puesto.
+*Puesto:*
 Training Manager
 
-1. Actualmente, ¿Cuál es la forma en que recabas data de las alumnas?.
-por excel
+**Actualmente, ¿Cuál es la forma en que recabas data de las alumnas?**
+Por excel.
 
-2. ¿Con que frecuencia accedes a esta data?
-todos los días
+**¿Con que frecuencia accedes a esta data?**
+Todos los días.
 
-3. ¿Utilizas una plataforma donde puedes acceder a información actualizada que requieres de las alumnas?
-Si
+**¿Utilizas una plataforma donde puedes acceder a información actualizada que requieres de las alumnas?**
+Sí
 No x
-(Si respondiste que SI) a.¿Cuál es?
-ojalá tuviera!
+(Si respondiste que SÍ) **a.¿Cuál es?**
+¡Ojalá tuviera!.
 
-b.¿Cómo funciona?
-no tengo
+**b.¿Cómo funciona?**
+No tengo.
 
-c.¿A cuales problemáticas te enfrentas al acceder a cierta información?
-todo está en excel, entonces si quieres ver la data consolidada y ponerla en perspectiva con otro resultado/indicador toma mucho tiempo y no es muy agil.
+**c.¿A cuales problemáticas te enfrentas al acceder a cierta información?**
+Todo está en excel, entonces si quieres ver la data consolidada y ponerla en perspectiva con otro resultado/indicador toma mucho tiempo y no es muy agil.
 
-d.¿Te es fácil entender su contenido al navegar en ella? ¿Por qué?
+**d.¿Te es fácil entender su contenido al navegar en ella? ¿Por qué?**
 No me es fácil navegar en excel y consolidar la información.
 
-e.¿Qué te gustaría que tuviera para facilitar su navegación y encuentres rápidamente lo que buscas?
-(Si respondiste que NO) a. ¿Cómo te gustaría que funcionara?
-una plataforma o una herramienta web conectada a la data y que genere los resultados automáticamente.
+**e.¿Qué te gustaría que tuviera para facilitar su navegación y encuentres rápidamente lo que buscas?
+(Si respondiste que NO) a. ¿Cómo te gustaría que funcionara?**
+Una plataforma o una herramienta web conectada a la data y que genere los resultados automáticamente.
 
-4. Actualmente, ¿Qué herramientas utilizas para graficar y clasificar data?
-Excel
+**Actualmente, ¿Qué herramientas utilizas para graficar y clasificar data?**
+Excel.
 
-5. En caso de utilizar gráficas, ¿cuál de ellas te es más útil?.
-% de estudiantes por arriba del 70% de los puntos y % de estudiantes por debajo
+**En caso de utilizar gráficas, ¿cuál de ellas te es más útil?**
+% de estudiantes por arriba del 70% de los puntos y % de estudiantes por debajo.
 
-6. ¿Con que frecuencia tienes que actualizar data de las alumnas?
-cada sprint
+**¿Con que frecuencia tienes que actualizar data de las alumnas?**
+Cada sprint.
 
-7. ¿Cuánto tiempo dedicas a actualizar data?
-casi 2 horas/día
+**¿Cuánto tiempo dedicas a actualizar data?**
+Casi 2 horas/día.
 
-8. ¿Cuál es tu sentir al tener que invertir esa cantidad de tiempo?
-es mucho tiempo que no debería de invertir en esto pero en cosas más importantes.
+**¿Cuál es tu sentir al tener que invertir esa cantidad de tiempo?**
+Es mucho tiempo que no debería de invertir en esto pero en cosas más importantes.
 
-9. Si tuvieras una herramienta que te optimice los tiempos y facilite tu trabajo, ¿Cómo te sentirías?
-feliz!
+**Si tuvieras una herramienta que te optimice los tiempos y facilite tu trabajo, ¿Cómo te sentirías?**
+¡Feliz!
 
 ***
 
-*Nombre Completo
+*Nombre Completo:*
 Alejandra Ramirez
 
-*Sede a la que perteneces.
+*Sede a la que perteneces:*
 Lima
 
-*Puesto.
+*Puesto:*
 Training Manager
 
-1. Actualmente, ¿Cuál es la forma en que recabas data de las alumnas?.
+**Actualmente, ¿Cuál es la forma en que recabas data de las alumnas?**
 A través de encuestas (self assessment cada semana, form de feedback al final de cada proyecto); a través de las evaluaciones técnicas de los retos y productos finales; y a través de las evaluaciones de habilidades blandas con los jedis.
 
-2. ¿Con que frecuencia accedes a esta data?
+**¿Con que frecuencia accedes a esta data?**
 La veo con mayor intensidad al final de cada proyecto (sprint).
 
-3. ¿Utilizas una plataforma donde puedes acceder a información actualizada que requieres de las alumnas?
-Si x
+**¿Utilizas una plataforma donde puedes acceder a información actualizada que requieres de las alumnas?**
+Sí x
 No
-(Si respondiste que SI) a.¿Cuál es?
-Google drive
+(Si respondiste que SÍ) **a.¿Cuál es?**
+Google drive.
 
-b.¿Cómo funciona?
+**b.¿Cómo funciona?**
 Son muchos spreadsheets! En los spreadsheets voy recolectando toda la info de las estudiantes.
 
-c.¿A cuales problemáticas te enfrentas al acceder a cierta información?
+**c.¿A cuáles problemáticas te enfrentas al acceder a cierta información?**
 Que no está centralizada, son varios archivos con información distinta y es pesado a veces revisar todo para tener una idea general del estatus de las estudiantes.
 
-d.¿Te es fácil entender su contenido al navegar en ella? ¿Por qué?
+**d.¿Te es fácil entender su contenido al navegar en ella? ¿Por qué?**
 Es fácil porque ya lo conozco pero considero que no es amigable para mi como usuaria.
 
-e.¿Qué te gustaría que tuviera para facilitar su navegación y encuentres rápidamente lo que buscas?
+**e.¿Qué te gustaría que tuviera para facilitar su navegación y encuentres rápidamente lo que buscas?**
 Filtros y gráficas que me resuman la información.
 
-(Si respondiste que NO) a. ¿Cómo te gustaría que funcionara?
+(Si respondiste que NO) **a. ¿Cómo te gustaría que funcionara?**
 
-4. Actualmente, ¿Qué herramientas utilizas para graficar y clasificar data?
-Solo excel!
+**Actualmente, ¿Qué herramientas utilizas para graficar y clasificar data?**
+¡Solo excel!
 
-5. En caso de utilizar gráficas, ¿cuál de ellas te es más útil?.
+**En caso de utilizar gráficas, ¿cuál de ellas te es más útil?**
 Me gustan las gráficas de barras o de pie dependiendo de la info que muestren.
 
-6. ¿Con que frecuencia tienes que actualizar data de las alumnas?
+**¿Con que frecuencia tienes que actualizar data de las alumnas?**
 Al menos cada 3/4 semanas.
 
-7. ¿Cuánto tiempo dedicas a actualizar data?
+**¿Cuánto tiempo dedicas a actualizar data?**
 Uf!! varios días, unos 3 creo.
 
-8. ¿Cuál es tu sentir al tener que invertir esa cantidad de tiempo?
+**¿Cuál es tu sentir al tener que invertir esa cantidad de tiempo?**
 Es un poco estresante porque hay presión de tiempo para tener todo listo y poder entregar a las estudiantes el feedback que necesitan.
 
-9. Si tuvieras una herramienta que te optimice los tiempos y facilite tu trabajo, ¿Cómo te sentirías?
-Feliz!
+**Si tuvieras una herramienta que te optimice los tiempos y facilite tu trabajo, ¿Cómo te sentirías?**
+¡Feliz!
 
 ***
 
-*Nombre Completo
+*Nombre Completo:*
 Valentina Smith
 
-*Sede a la que perteneces.
+*Sede a la que perteneces:*
 Santiago
 
-*Puesto.
+*Puesto:*
 Training Manager
 
-1. Actualmente, ¿Cuál es la forma en que recabas data de las alumnas?.
+**Actualmente, ¿Cuál es la forma en que recabas data de las alumnas?.**
 A través de encuestas en google form o de spredsheats que les paso por slack.
 
-2. ¿Con que frecuencia accedes a esta data?
-todos los días!
+**¿Con que frecuencia accedes a esta data?**
+¡Todos los días!
 
-3. ¿Utilizas una plataforma donde puedes acceder a información actualizada que requieres de las alumnas?
-Si x
+**¿Utilizas una plataforma donde puedes acceder a información actualizada que requieres de las alumnas?**
+Sí x
 No
-(Si respondiste que SI) a.¿Cuál es?
-Google form a través de drive
+(Si respondiste que SÍ) **a.¿Cuál es?**
+Google form a través de drive.
 
-b.¿Cómo funciona?
-Bien, pero está diseminada
+**b.¿Cómo funciona?**
+Bien, pero está diseminada.
 
-c.¿A cuales problemáticas te enfrentas al acceder a cierta información?
+**c.¿A cuales problemáticas te enfrentas al acceder a cierta información?**
 Que no está centralizada!
 
-d.¿Te es fácil entender su contenido al navegar en ella? ¿Por qué?
-sí, pero no está toda agrupada
+**d.¿Te es fácil entender su contenido al navegar en ella? ¿Por qué?**
+Sí, pero no está toda agrupada.
 
-e.¿Qué te gustaría que tuviera para facilitar su navegación y encuentres rápidamente lo que buscas?
-los resultados de las alumnas, los puntos, cómo se están sintiendo en clases, etc.
+**e.¿Qué te gustaría que tuviera para facilitar su navegación y encuentres rápidamente lo que buscas?**
+Los resultados de las alumnas, los puntos, cómo se están sintiendo en clases, etc.
 
-(Si respondiste que NO) a. ¿Cómo te gustaría que funcionara?
+(Si respondiste que NO) **a. ¿Cómo te gustaría que funcionara?**
 
-4. Actualmente, ¿Qué herramientas utilizas para graficar y clasificar data?
-mm hago gráficos en excel
+**Actualmente, ¿Qué herramientas utilizas para graficar y clasificar data?**
+Mmm hago gráficos en excel.
 
-5. En caso de utilizar gráficas, ¿cuál de ellas te es más útil?.
-las gráficas de torta
+**En caso de utilizar gráficas, ¿cuál de ellas te es más útil?**
+Las gráficas de torta.
 
-6. ¿Con que frecuencia tienes que actualizar data de las alumnas?
-todas las semanas
+**¿Con que frecuencia tienes que actualizar data de las alumnas?**
+Todas las semanas.
 
-7. ¿Cuánto tiempo dedicas a actualizar data?
-una hora diaria
+**¿Cuánto tiempo dedicas a actualizar data?**
+Una hora diaria.
 
-8. ¿Cuál es tu sentir al tener que invertir esa cantidad de tiempo?
-siento que es demasiado!
+**¿Cuál es tu sentir al tener que invertir esa cantidad de tiempo?**
+¡Siento que es demasiado!
 
-9. Si tuvieras una herramienta que te optimice los tiempos y facilite tu trabajo, ¿Cómo te sentirías?
-mucho más aliviada!
+**Si tuvieras una herramienta que te optimice los tiempos y facilite tu trabajo, ¿Cómo te sentirías?**
+¡Mucho más aliviada!
 
 **DESCUBRIMIENTO DE LAS ENTREVISTAS / ENCUESTAS**
 
-El acceso a la data se encuentra disperso.    
+**El acceso a la data se encuentra disperso**   
 
 Al mostrar la data de las alumnas de manera ordenada y clasificada por medio de un dashboard:
 
-* Promedio general Tech / HSE.
-* Promedio general por Sprint (Tech / HSE).
+* Promedio de notas por sprint.
+* Promedio de notas HSE.
+* Promedio notas técnicas
 
-Se obtendrá un acceso fácil y rápido a la data y se invertirá poco tiempo para procesar dichos datos, de igual manera, el sentimiento de estrés o frustración será mermado.
+Se obtendrá un acceso fácil y rápido a la data y se invertirá poco tiempo para procesar dichos datos, de igual manera, el sentimiento de estrés o frustración será mermado y se trabajará de manera optima, obteniendo más productividad.
 
-Únicamente acceden  a los datos por medio de Excel y formularios
+**Únicamente acceden  a los datos por medio de Excel y formularios**
 
 Por lo tanto, es una excelente idea realizar un dashboard en donde se encuentre toda la información de manera clasificada, obteniendo data de todas las sedes (Gdl, CDMX, Santiago de Chile, Aréquipa, Lima, Sao Paulo).
 
 
-No utilizan gráficas para analizar los datos.
+**No utilizan gráficas para analizar los datos**
 
 Al utilizar gráficos se facilita la comprensión, comparación y análisis de datos.
 
@@ -260,21 +245,21 @@ Al utilizar gráficos se facilita la comprensión, comparación y análisis de d
 
 **HIPOTESIS**
 
-La falta de datos organizados provoca que se invierta mucho tiempo en la búsqueda de información, ante esto se produce estrés en el usuario.
+La falta de datos organizados provoca que se invierta mucho tiempo en la búsqueda de información, no se puede realizar el trabajo de manera optima, lo que se traduce en baja productividad.
 
 **OBJETIVO PRINCIPAL**
 
-Se tiene planeado ontener un acceso fácil y rápido a dicha data, mejorando el análisis de los mismos y la manipulación de la información.
+Obtener un acceso fácil y rápido a dicha data, mejorar el análisis de la misma y procesar información de manera efectiva.
 
 **PROBLEMA PRINCIPAL DE TRADING MANAGERS**
 
-Con la investigación se tomó como referencia entrevistas a coaches, la psicóloga y training managers de diferentes sedes de Laboratoria. Se resumieron los puntos en comunes, asi que se decidió enfocarse en  los problemas principales que se pueden enfrentar al manejar toda esta información, los más sobresalientes son los siguientes:
+Con la investigación se tomó como referencia entrevistas a training managers de diferentes sedes de Laboratoria. Se resumieron los puntos comunes, asi que se decidió enfocarse en los problemas principales que se pueden enfrentar al manejar toda esta información, los más sobresalientes son los siguientes:
 
 * Empatar información de las alumnas.
 
 * Hay mucha data y se encuentra dispersa.
 
-* Se recobra la información en excel por lo que es más difícil su análisis y procesamiento.
+* Se recaba la información en excel, por lo que es más difícil su análisis y procesamiento.
 
 * Difícil manejo de información de otras generaciones pasadas.
 
@@ -291,15 +276,17 @@ Con la investigación se tomó como referencia entrevistas a coaches, la psicól
 * En algunas sedes se realizan los cálculos de los procesos de manera manual.
 
 
-**PRUEBAS Y RESULTADOS LLUVIA DE IDEAS**
+**PRUEBAS Y RESULTADOS - LLUVIA DE IDEAS**
 
-Conforme las entrevistas que se realizaron y analizando la lluvia de ideas inicial podemos confirmar algunos supuestos que se habían establecido en el inicio: la data que se maneja no está organizada de manera eficiente, empatar/encontrar la información de las alumnas es complicado ya que la data se encuentra dispersa, resultaría muy útil manejar y procesar la información de manera organizada y tener acceso directo a la data, se puede optimizar el tiempo de navegación estableciendo accesos directos a información principal.
+Conforme las entrevistas que se realizaron y analizando la lluvia de ideas inicial, se pueden confirmar algunos supuestos que se habían establecido en el inicio: la data que se maneja no está organizada de manera eficiente, empatar/encontrar la información de las alumnas es complicado ya que la data se encuentra dispersa, resultaría muy útil manejar y procesar la información de manera organizada y tener acceso directo a la data, se puede optimizar el tiempo de navegación estableciendo accesos directos a información principal.
 
 
 ## PROTOTIPADO
 
-![Mock up 1](assets/images/mockup1.png)
+![Mock up 1](assets/images/mockup-one.jpg)
 
-![Mock up 2](assets/images/mockup2.png)
+![Mock up 2](assets/images/mockup-two.jpg)
 
-![Mock up 3](assets/images/mockup3.jpg)
+![Mock up 3](assets/images/mockup-three.jpg)
+
+![Mock up 4](assets/images/mockup-four.jpg)
