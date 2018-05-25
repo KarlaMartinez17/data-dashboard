@@ -251,7 +251,7 @@ La falta de datos organizados provoca que se invierta mucho tiempo en la búsque
 
 Obtener un acceso fácil y rápido a dicha data, mejorar el análisis de la misma y procesar información de manera efectiva.
 
-**PROBLEMA PRINCIPAL DE TRADING MANAGERS**
+**PROBLEMA PRINCIPAL DE TRAINING MANAGERS**
 
 Con la investigación se tomó como referencia entrevistas a training managers de diferentes sedes de Laboratoria. Se resumieron los puntos comunes, asi que se decidió enfocarse en los problemas principales que se pueden enfrentar al manejar toda esta información, los más sobresalientes son los siguientes:
 
