@@ -289,4 +289,4 @@ Conforme las entrevistas que se realizaron y analizando la lluvia de ideas inici
 
 ![Mock up 3](assets/images/mockup-three.jpg)
 
-![Mock up 4](assets/images/mockup-four.jpg)
+![Mock up 4](assets/images/mockup4.jpg)
