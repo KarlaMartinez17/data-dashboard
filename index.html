@@ -2,13 +2,82 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Dashboard</title>
+    <title>Dashboard Laboratoria</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   <body>
+    <!--Navigation-->
+    <nav>
+      <div class="main-logo">
+        <h1>Dashboard</h1>
+        <img class="lab-logo" src="assets/images/laboratoria_logo.png" alt="laboratoria-logo">
+      </div>
+     </nav>
+    <hr>
+    <!--Header-->
+    <header>
+     <div class="container-countries">
+      <ul>
+        <li class="submenu">
+          <input type="checkbox" id="checkbox-peru">
+          <label for="checkbox-peru" class="countries">Perú</label>
+         <ul class="hide sede-cities">
+           <li class="first-element">Arequipa</li>
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+           <li>Lima</li>
+         </ul>
+        </li>
+        <li class="submenu">
+          <input type="checkbox" id="checkbox-mx">
+          <label for="checkbox-mx" class="countries">México</label>
+         <ul class="hide sede-cities">
+          <li class="first-element">Cd México</li>
+          <li>Guadalajara</li>
+         </ul>
+         </li>
+        <li class="submenu">
+          <input type="checkbox" id="checkbox-chile">
+          <label for="checkbox-chile" class="countries">Chile</label>
+         <ul class="hide sede-cities">
+          <li class="first-element">Santiago</li>
+          </li>
+         </ul>
+        <li class="submenu">
+          <input type="checkbox" id="checkbox-brasil">
+          <label for="checkbox-brasil" class="countries">Brasil</label>
+         <ul class="hide sede-cities">
+          <li class="first-element">Sao Pablo</li>
+         </ul>
+        </li>
+      </ul>
+     </div>
+    </header>
+    <!-- Graphics Summary -->
+    <div class="container">
+      <div class="graphics-summary">
 
-		<!-- Base de datos -->
-		<script src="./js/data.js"></script>
-		<!-- Aquí va tus archivos JS -->
-    <script src="./js/app.js"></script>
+      </div>
+    </div>
+    <!-- Quick Access Information -->
+    <div class="container">
+      <div class="info-left">
+        <p>Estudiantes <br> Inscritas</p>
+      </div>
+      <div class="info-center">
+        <p>Estudiantes <br> que desertaron</p>
+      </div>
+      <div class="info-right">
+        <p>Estudiantes <br> que pasan el criterio minimo de evaluación</p>
+      </div>
+    </div>
+
+    <!-- Database -->
+		<script src="js/data.js"></script>
+		<!-- Files JS -->
+    <script src="js/app.js"></script>
   </body>
 </html>

@@ -1,3 +1,140 @@
-/*
- * Estilos de tu proyecto
- */
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: museo-sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* NAVIGATION */
+
+nav {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+nav div.main-logo img.lab-logo {
+  width: 250px;
+}
+
+div.info-user {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+}
+
+/* HEADER */
+
+div.container-countries {
+  text-align: left;
+}
+
+div.container-countries ul {
+  list-style: none;
+}
+
+div.container-countries ul > li {
+  border: 30px;
+  padding: 8px 45px;
+  display: inline-block;
+  margin-left: 7%;
+
+}
+
+div.container-countries ul ul {
+  top: 20%;
+  position: absolute;
+}
+
+div.container-countries  ul.sede-cities li {
+  display: block;
+  background-color: #FFE521;
+  color: #000000;
+  text-align: left;
+  padding: 8px 20px;
+}
+
+div.container-countries  ul.sede-cities li:hover {
+  background-color: #56F89A;
+}
+
+ul.sede-cities li.first-element {
+  margin-top: 15px;
+}
+
+div.container-countries ul.sede-cities {
+  padding-left: 0px;
+  margin-left: 0px;
+  text-align: left;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+div.container-countries ul li.submenu input {
+  width: 40px;
+}
+/**/
+input.countries {
+  font-size: 25px;
+}
+
+input[type = checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  cursor: pointer;
+}
+
+label:before {
+  content: '';
+  background: transparent;
+  border: 3px solid #FF009E;
+  border-radius: 30%;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+input[type=checkbox]:checked + label:before {
+  content: '✓';
+  font-size: 20px;
+  color: #FF009E;
+}
+
+/* GRAPHICS SUMMARY */
+
+div.graphics-summary {
+  width: 70%;
+  height: 300px;
+  border: 1px solid black;
+  margin-left: 15%;
+  margin-top: 3.5%;
+}
+
+/* QUICK ACCESS INFORMATION */
+
+p {
+  font-weight: 400;
+}
+
+div.info-left, div.info-center, div.info-right {
+  width: 24%;
+  height: 150px;
+  border: 1px solid black;
+  padding: 10px 2%;
+  display: inline-block;
+  margin: 30px;
+}
