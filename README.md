@@ -55,7 +55,6 @@ Si, todo el tiempo, utilizando sus carpetas de Drive.
  9. Accede a toda la información por medio de excel y form.
  10. Todos los filtros son por sede y por generación.
 
-
 ***
 
 *Nombre Completo:*

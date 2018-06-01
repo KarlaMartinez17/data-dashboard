@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Dashboard Laboratoria</title>
     <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   <body>
    <!--Logo-->
@@ -16,8 +17,43 @@
     <hr>
     <!--Navigation-->
     <nav>
-     <div class="container">
-
+      <div id="contentSection" class="container">
+       <ul class="containerTabs">
+         <li><button type="button" class="tab" name="button" data-tabSeleccionado="tabEstudiantes">Estudiantes</button></li>
+         <li><button type="button" class="tab" name="button" data-tabSeleccionado="tabCoachs">Coachs</button></li>
+         <li><button type="button" class="tab" name="button" data-tabSeleccionado="tabJedi">Jedis</button></li>
+       </ul>
+       <div>
+         <article id="estudiantes" class="students">
+           <div>
+             <i class="fas fa-user"></i>
+           </div>
+           <div class="divTexto">
+             <h3>Nombre</h3>
+             <ul>
+               <li>Promedio de notas: </li>
+               <li>Promedio notas HSE: </li>
+               <li>Promedio de notas tecnicas: </li>
+             </ul>
+           </div>
+         </article>
+         <article id="coaches" class="coaches">
+           <div class="divTexto">
+             <h3>Nombre</h3>
+             <ul>
+               <li>Nota final: </li>
+             </ul>
+           </div>
+         </article>
+         <article id="jedi" class="jedis">
+           <div class="divTexto">
+             <h3>Jedi</h3>
+             <ul>
+               <li>Nota final: </li>
+             </ul>
+           </div>
+         </article>
+       </div>
      </div>
     </nav>
 

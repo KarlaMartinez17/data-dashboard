@@ -23,7 +23,6 @@ for(var i = 0; i < submenu.length; i++ ) {
 var generation = document.getElementsByClassName('generation');
 for(var j = 0; j < generation.length; j++) {
   generation[j].addEventListener('click', function(e){
-    console.log('hola');
     var button = document.getElementById('main-button');
     var mainImage = document.getElementById('main-picture');
     button.style.display = 'block';
