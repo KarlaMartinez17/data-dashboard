@@ -7,59 +7,65 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   <body>
-   <!--Logo-->
-    <div class="container-logo">
-      <div class="main-logo">
-        <h1>Dashboard</h1>
-        <img class="lab-logo" src="assets/images/laboratoria_logo.png" alt="laboratoria-logo">
-      </div>
-    </div>
-    <hr>
-    <!--Navigation-->
-    <nav>
-      <div id="contentSection" class="container">
-       <ul class="containerTabs">
-         <li><button type="button" class="tab" name="button" data-tabSeleccionado="tabEstudiantes">Estudiantes</button></li>
-         <li><button type="button" class="tab" name="button" data-tabSeleccionado="tabCoachs">Coachs</button></li>
-         <li><button type="button" class="tab" name="button" data-tabSeleccionado="tabJedi">Jedis</button></li>
-       </ul>
-       <div>
-         <article id="estudiantes" class="students">
-           <div>
-             <i class="fas fa-user"></i>
-           </div>
-           <div class="divTexto">
-             <h3>Nombre</h3>
-             <ul>
-               <li>Promedio de notas: </li>
-               <li>Promedio notas HSE: </li>
-               <li>Promedio de notas tecnicas: </li>
-             </ul>
-           </div>
-         </article>
-         <article id="coaches" class="coaches">
-           <div class="divTexto">
-             <h3>Nombre</h3>
-             <ul>
-               <li>Nota final: </li>
-             </ul>
-           </div>
-         </article>
-         <article id="jedi" class="jedis">
-           <div class="divTexto">
-             <h3>Jedi</h3>
-             <ul>
-               <li>Nota final: </li>
-             </ul>
-           </div>
-         </article>
+    <!--Logo-->
+     <div class="container-logo">
+       <div class="main-logo">
+         <h1>Dashboard</h1>
+         <img class="lab-logo" src="assets/images/laboratoria_logo.png" alt="laboratoria-logo">
        </div>
      </div>
-    </nav>
-
-    <!-- Database -->
-		<script src="js/data.js"></script>
-		<!-- Files JS -->
-    <script src="js/app.js"></script>
-  </body>
-</html>
+     <hr>
+     <!--Navigation-->
+     <nav>
+       <div id="contentSection" class="container">
+        <ul class="containerTabs">
+          <li><button type="button" class="tab" name="button" data-tabSeleccionado="tabEstudiantes">Estudiantes</button></li>
+          <li><button type="button" class="tab" name="button" data-tabSeleccionado="tabCoachs">Coaches</button></li>
+          <li><button type="button" class="tab" name="button" data-tabSeleccionado="tabJedi">Jedis</button></li>
+        </ul>
+       <div>
+          <article id="estudiantes" class="students">
+            <div>
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="divTexto">
+              <h3>Nombre</h3>
+              <ul>
+                <li>Promedio de notas: </li>
+                <li>Promedio notas HSE: </li>
+                <li>Promedio de notas tecnicas: </li>
+              </ul>
+            </div>
+          </article>
+          <div id="corchetes">
+            <img src="assets/images/corchetes.png" alt="corchetes">
+          </div>
+          <div id="corchetes2">
+           <img src="assets/images/corchetes.png" alt="corchetes">
+         </div>
+          <article id="coaches" class="coaches">
+            <div class="divTexto">
+              <h3>Coaches</h3>
+              <ul>
+                <li>Nota final: </li>
+              </ul>
+            </div>
+          </article>
+          <article id="jedi" class="jedis">
+            <div class="divTexto">
+              <h3>Jedi</h3>
+              <ul>
+                <li>Nota final: </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+     </nav>
+     <!-- Database -->
+     <script src="js/data.js"></script>
+     <!-- Files JS -->
+     <script src="js/app.js"></script>
+   </body>
+ </html>
+ 
