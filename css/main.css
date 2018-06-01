@@ -4,9 +4,9 @@ body {
   font-family: museo-sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* NAVIGATION */
+/* LOGO */
 
-nav {
+div.container-logo {
   text-align: center;
 }
 
@@ -16,7 +16,7 @@ h1 {
   padding: 0;
 }
 
-nav div.main-logo img.lab-logo {
+div.container-logo div.main-logo img.lab-logo {
   width: 250px;
 }
 
@@ -26,26 +26,30 @@ div.info-user {
   right: 15%;
 }
 
-/* HEADER */
+/* NAVIGATION */
 
 div.container-countries {
-  text-align: left;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 11%;
 }
 
 div.container-countries ul {
   list-style: none;
+  padding: 0;
+  margin-top: 0;
 }
 
 div.container-countries ul > li {
   border: 30px;
-  padding: 8px 45px;
+  padding: 8px 77px;
   display: inline-block;
-  margin-left: 7%;
-
+  margin-left: 12px;
+/*******/
 }
 
 div.container-countries ul ul {
-  top: 20%;
+  top: 21.5%;
   position: absolute;
 }
 
@@ -55,6 +59,7 @@ div.container-countries  ul.sede-cities li {
   color: #000000;
   text-align: left;
   padding: 8px 20px;
+  width: 68px;
 }
 
 div.container-countries  ul.sede-cities li:hover {
@@ -62,7 +67,7 @@ div.container-countries  ul.sede-cities li:hover {
 }
 
 ul.sede-cities li.first-element {
-  margin-top: 15px;
+  margin-top: 35px;
 }
 
 div.container-countries ul.sede-cities {
@@ -79,49 +84,64 @@ div.container-countries ul.sede-cities {
   display: block;
 }
 
-div.container-countries ul li.submenu input {
-  width: 40px;
-}
-/**/
-input.countries {
-  font-size: 25px;
+p.countries {
+  border: 3px solid #FF009E;
+  padding: 3px 14px;
+  border-radius: 10px;
 }
 
-input[type = checkbox] {
-  display: none;
-}
-
-input[type=checkbox] + label {
+p.countries:hover {
   cursor: pointer;
 }
 
-label:before {
-  content: '';
-  background: transparent;
-  border: 3px solid #FF009E;
-  border-radius: 30%;
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  margin-right: 20px;
-  text-align: center;
-  vertical-align: middle;
+ul.generation {
+  width: 100px;
+  position: absolute;
+  left: 90%;
 }
 
-input[type=checkbox]:checked + label:before {
-  content: '✓';
-  font-size: 20px;
-  color: #FF009E;
+ul.generation li.ar-generation {
+  float: left;
+  position: relative;
 }
 
-/* GRAPHICS SUMMARY */
+ul.generation > li.ar-generation {
+  margin-top: -70px;
+  margin-left: -8px;
+}
+
+ul.generation > li.ar-20171 {
+  margin-top: -36px;
+
+}
+
+ul.generation li.li-generation {
+  float: right;
+  position: relative;
+}
+
+/* HEADER / GRAPHICS SUMMARY */
 
 div.graphics-summary {
+  /*border: 1px solid black;*/
   width: 70%;
   height: 300px;
-  border: 1px solid black;
   margin-left: 15%;
-  margin-top: 3.5%;
+  margin-top: 4.5%;
+}
+
+img.lab-picture {
+  margin-left: 13%;
+  display: block;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  background: yellow;
+  position: absolute;
+  left: 45%;
+  display: none;
 }
 
 /* QUICK ACCESS INFORMATION */
@@ -133,8 +153,12 @@ p {
 div.info-left, div.info-center, div.info-right {
   width: 24%;
   height: 150px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   padding: 10px 2%;
   display: inline-block;
   margin: 30px;
+}
+
+div.quick-info {
+  display: none;
 }

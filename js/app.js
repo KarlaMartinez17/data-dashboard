@@ -1,18 +1,14 @@
-/*
- * Funcionalidad de tu producto
- */
-
-// Puedes hacer uso de la base de datos a través de la variable `data`
+// Data base
 console.log(data);
 
 // Show submenu countries
 
 var submenu = document.getElementsByClassName('submenu');
-for (var i = 0; i < submenu.length; i++ ) {
+for(var i = 0; i < submenu.length; i++ ) {
   submenu[i].addEventListener('click', function(e){
     e.preventDefault();
   var listSubmenu = this.getElementsByClassName('sede-cities')[0];
-  if (listSubmenu.classList.contains('hide')) {
+  if(listSubmenu.classList.contains('hide')) {
     listSubmenu.classList.remove('hide');
     listSubmenu.classList.add('show');
   } else {
@@ -22,11 +18,15 @@ for (var i = 0; i < submenu.length; i++ ) {
 }
 )};
 
-// Function that hides the form
+//Show quick information
 
-  var signIn = document.getElementById('sign-in');
-  signIn.addEventListener('click', function() {
-    e.preventDefault();
-  var userForm = document.getElementById('userForm');
-  userForm.style.display = 'none';
-});
+var generation = document.getElementsByClassName('generation');
+for(var j = 0; j < generation.length; j++) {
+  generation[j].addEventListener('click', function(e){
+    console.log('hola');
+    var button = document.getElementById('main-button');
+    var mainImage = document.getElementById('main-picture');
+    button.style.display = 'block';
+    mainImage.style.display = 'none';
+  })
+};

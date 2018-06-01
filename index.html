@@ -4,77 +4,100 @@
     <meta charset="utf-8">
     <title>Dashboard Laboratoria</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   <body>
-    <!--Navigation-->
-    <nav>
+   <!--Logo-->
+    <div class="container-logo">
       <div class="main-logo">
         <h1>Dashboard</h1>
         <img class="lab-logo" src="assets/images/laboratoria_logo.png" alt="laboratoria-logo">
       </div>
-     </nav>
+    </div>
     <hr>
-    <!--Header-->
-    <header>
+    <!--Navigation-->
+    <nav>
      <div class="container-countries">
       <ul>
         <li class="submenu">
-          <input type="checkbox" id="checkbox-peru">
-          <label for="checkbox-peru" class="countries">Perú</label>
+        <p class="countries">Perú</p>
          <ul class="hide sede-cities">
-           <li class="first-element">Arequipa</li>
-            <ul>
-              <li></li>
-              <li></li>
+           <li class="submenu2 first-element">Arequipa
+            <ul class="generation">
+              <li class="ar-generation ar-20162">2016-2</li>
+              <li class="ar-generation ar-20171">2017-1</li>
             </ul>
-           <li>Lima</li>
+           </li>
+           <li class="submenu2">Lima
+            <ul class="generation">
+              <li class="li-generation li-20162">2016-2</li>
+              <li class="li-generation li-20171">2017-1</li>
+              <li class="li-generation li-20172">2017-2</li>
+            </ul>
+          </li>
          </ul>
         </li>
         <li class="submenu">
-          <input type="checkbox" id="checkbox-mx">
-          <label for="checkbox-mx" class="countries">México</label>
+        <p class="countries">México</p>
          <ul class="hide sede-cities">
-          <li class="first-element">Cd México</li>
-          <li>Guadalajara</li>
+          <li class="submenu2 first-element">Cd México
+           <ul class="generation">
+             <li class="cdmx-generation cdmx-20171">2017-1</li>
+             <li class="cdmx-generation cdmx-20172">2017-2</li>
+           </ul>
+          </li>
+          <li class="submenu2">Guadalajara
+         </li>
          </ul>
          </li>
         <li class="submenu">
-          <input type="checkbox" id="checkbox-chile">
-          <label for="checkbox-chile" class="countries">Chile</label>
+        <p class="countries">Chile</h3>
          <ul class="hide sede-cities">
-          <li class="first-element">Santiago</li>
+          <li class="submenu2 first-element">Santiago
+           <ul class="generation">
+             <li class="s-generation s-20162">2016-2</li>
+             <li class="s-generation s-20171">2017-1</li>
+             <li class="s-generation s-20181">2017-2</li>
+           </ul>
+          </li>
           </li>
          </ul>
         <li class="submenu">
-          <input type="checkbox" id="checkbox-brasil">
-          <label for="checkbox-brasil" class="countries">Brasil</label>
+        <p class="countries">Brasil</p>
          <ul class="hide sede-cities">
-          <li class="first-element">Sao Pablo</li>
+          <li class="submenu2 first-element">Sao Pablo
+          </li>
          </ul>
         </li>
       </ul>
      </div>
-    </header>
-    <!-- Graphics Summary -->
-    <div class="container">
+    </nav>
+    <!-- Header / Graphics Summary -->
+    <header>
+    <div class="container-header">
       <div class="graphics-summary">
-
+        <img id="main-picture" class="lab-picture" src="assets/images/lab-picture.png" alt="lab-picture">
       </div>
+     <a href="info.html"><button id="main-button" type="button" name="button"> Más información</button></a>
     </div>
+    </header>
     <!-- Quick Access Information -->
     <div class="container">
-      <div class="info-left">
-        <p>Estudiantes <br> Inscritas</p>
+      <div class="quick-info info-left">
+        <div>
+          <p>Estudiantes activas</p>
+        </div>
       </div>
-      <div class="info-center">
-        <p>Estudiantes <br> que desertaron</p>
+      <div  class="quick-info info-center">
+        <div>
+          <p>Estudiantes que desertaron</p>
+        </div>
       </div>
-      <div class="info-right">
-        <p>Estudiantes <br> que pasan el criterio minimo de evaluación</p>
+      <div  class="quick-info info-right">
+        <div>
+          <p>Estudiantes activas que pasan el criterio minimo de evaluación</p>
+        </div>
       </div>
     </div>
-
     <!-- Database -->
 		<script src="js/data.js"></script>
 		<!-- Files JS -->

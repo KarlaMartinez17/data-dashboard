@@ -1,0 +1,27 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: museo-sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* LOGO */
+
+div.container-logo {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+div.container-logo div.main-logo img.lab-logo {
+  width: 250px;
+}
+
+div.info-user {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+}
