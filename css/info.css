@@ -49,62 +49,6 @@ button.tab {
   width: 100px;
   position: relative;
   right: 3em;
-}
-
-div.divTexto {
-  display: inline-block;
-}
-/* GENERAL */
-body {
-  margin: 0;
-  font-family: museo-sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* LOGO */
-
-div.container-logo {
-  text-align: center;
-}
-
-h1 {
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
-
-div.container-logo div.main-logo img.lab-logo {
-  width: 250px;
-}
-
-div.info-user {
-  position: absolute;
-  top: 5%;
-  right: 15%;
-}
-
-/* NAVIGATION */
-
-#contentSection .containerTabs {
-    position: relative;
-    left: 3em;
-    width: 84%;
-    color: white;
-    font-size: 1.5em;
-    border-bottom: 1px solid #80808069;
-}
-
-ul.containerTabs li {
-  list-style: none;
-  display: inline-block;
-}
-
-button.tab {
-  border-radius: 5%;
-  border-bottom: none;
-  padding: 10px;
-  width: 100px;
-  position: relative;
-  right: 3em;
   background-color: #fee524;
   font-size: 14px;
   font-weight: bold;
@@ -146,5 +90,3 @@ div.divTexto {
   box-sizing: border-box;
   transform: rotate(180deg);
 }
-
-

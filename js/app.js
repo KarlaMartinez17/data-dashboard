@@ -25,8 +25,10 @@ for(var j = 0; j < generation.length; j++) {
   generation[j].addEventListener('click', function(e){
     var button = document.getElementById('main-button');
     var mainImage = document.getElementById('main-picture');
+    var quickInfo = document.getElementById('quickInfo');
     button.style.display = 'block';
     mainImage.style.display = 'none';
+    quickInfo.style.display = 'block';
   })
 };
 
@@ -46,6 +48,9 @@ function activeStudents(sede, generacion) {
   return studentsActive;
 }
 
+//var containerActiveStudents = document.getElementById('numberOfstudents');
+//var numberStudents = document.createTextNode('p')
+
 //console.log(activeStudents("AQP", "2016-2"));
 //console.log(activeStudents("AQP", "2017-1"));
 
@@ -54,20 +59,20 @@ function disableStudents(sede, generacion) {
   var studentsNameLeft = [];
   var studentsLeft;
   var studentsPercentageAndNameLeft = [];
-  
+
   for (var h = 0; h < data[sede][generacion].students.length; h++) {
       if (data[sede][generacion].students[h].active === false) {
           studentsNameLeft.push(data[sede][generacion].students[h].name);
           studentsLeft = studentsNameLeft.length;
       }
   }
- 
+
   studentsPercentageAndNameLeft = [studentsNameLeft, Math.round((studentsLeft * 100) / data[sede][generacion].students.length) + "%"];
-  
-  return studentsPercentageAndNameLeft; 
+
+  return studentsPercentageAndNameLeft;
 }
 
-//console.log(disableStudents("AQP", "2016-2"));
+console.log(disableStudents("AQP", "2016-2"));
 //console.log(disableStudents("AQP", "2017-1"));
 
 
@@ -106,7 +111,7 @@ function percentageStudentsAccomplishAddPass(sede, generacion) {
 function averageCoaches(sede, generacion) {
   var sprintCoach = [];
   var averageCoach= 0;
-  
+
   for (var c = 0; c < data[sede][generacion].ratings.length; c++) {
       sprintCoach.push(data[sede][generacion].ratings[c].teacher);
   }
@@ -125,7 +130,7 @@ function averageCoaches(sede, generacion) {
 function averageJediMasters(sede, generacion) {
   var sprintJedi = [];
   var averageJedi= 0;
-  
+
   for (var c = 0; c < data[sede][generacion].ratings.length; c++) {
       sprintJedi.push(data[sede][generacion].ratings[c].jedi);
   }
@@ -139,5 +144,3 @@ function averageJediMasters(sede, generacion) {
 
 //console.log(averageJediMasters("AQP", "2016-2"));
 //console.log(averageJediMasters("AQP", "2017-1"));
-
-

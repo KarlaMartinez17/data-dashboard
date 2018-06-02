@@ -45,7 +45,6 @@ div.container-countries ul > li {
   padding: 8px 77px;
   display: inline-block;
   margin-left: 12px;
-/*******/
 }
 
 div.container-countries ul ul {
@@ -159,6 +158,6 @@ div.info-left, div.info-center, div.info-right {
   margin: 30px;
 }
 
-div.quick-info {
+div#quickInfo {
   display: none;
 }
