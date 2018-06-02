@@ -144,3 +144,119 @@ function averageJediMasters(sede, generacion) {
 
 //console.log(averageJediMasters("AQP", "2016-2"));
 //console.log(averageJediMasters("AQP", "2017-1"));
+
+
+//FUNCIÓN PARA OBTENER DATOS INDIVIDUALES DE LAS ESTUDIANTES DE CADA GENERACIÓN 
+function getActiveStudents(sede, generacion) {
+    
+  var students = data[sede][generacion].students;
+  var activeStudents = [];
+
+  for(var i = 0; i < students.length; i++) {
+      var student = students[i];
+      var newStudent = {};
+
+      if(student.active === true) {
+          var averageHse = 0;
+          var averageTech = 0;
+          var totalSprints = 0;
+          var minimumScoreTech = 0;
+          var minimumScoreHse = 0;
+          var minimumScoreTotal = 0;
+          var passTech = false;
+          var passHse = false;
+          var passTotal = false;
+
+          for(var j = 0; j < student.sprints.length; j++) {
+              averageHse += student.sprints[j].score.hse; 
+              averageTech += student.sprints[j].score.tech;
+
+              console.log(student.sprints[j].score.tech);
+          }
+          totalSprints = averageHse + averageTech;
+          minimumScoreTech = 1260 * student.sprints.length;
+          minimumScoreHse = 840 * student.sprints.length;
+          minimumScoreTotal = 2100 * student.sprints.length;
+
+          console.log(averageTech);
+          
+          if(averageTech >= minimumScoreTech) {
+              passTech = true;
+          }
+          
+          if(averageHse >= minimumScoreHse) {
+              passHse = true;
+          }
+          
+          if(totalSprints >= minimumScoreTotal) {
+              passTotal = true;
+          }
+
+          newStudent.name = student.name;
+          newStudent.passTech = passTech;
+          newStudent.passHse = passHse;
+          newStudent.passTotal = passTotal;
+
+          activeStudents.push(newStudent);
+      }
+
+  }
+
+  return activeStudents;
+}
+
+
+//FUNCIÓN PARA OBTENER DATOS GENERALES DE GENERACIÓN (TOTAL, TECH. HSE)
+function setGeneralData(sede, generacion) {
+  var trueStudents = getActiveStudents(sede, generacion);
+  var approvedTotalStudents = 0;
+  var approvedTechStudents = 0;
+  var approvedHseStudents = 0;
+  var percentageApprovedTotalStudents = 0;
+  var percentageApprovedTechStudents = 0;
+  var percentageApprovedHseStudents = 0;
+
+  console.log(trueStudents);
+
+  for(var i = 0; i < trueStudents.length; i++) {
+      if(trueStudents[i].passTotal === true) {
+          approvedTotalStudents++;
+      }
+
+      if(trueStudents[i].passTech === true) {
+          approvedTechStudents++;
+      }
+
+      if(trueStudents[i].passHse === true) {
+          approvedHseStudents++;
+      }
+  }
+
+  percentageApprovedTotalStudents = ((100 * approvedTotalStudents)  / trueStudents.length) + "%";
+  percentageApprovedTechStudents = ((100 * approvedTechStudents)  / trueStudents.length) + "%";
+  percentageApprovedHseStudents = ((100 * approvedHseStudents)  / trueStudents.length) + "%";
+
+  return {
+      hse: {
+          activeStudents: trueStudents.length,
+          approvedStudents : approvedHseStudents,
+          percentageApproved : percentageApprovedHseStudents
+      },
+      tech: {
+          activeStudents: trueStudents.length,
+          approvedStudents : approvedTechStudents,
+          percentageApproved : percentageApprovedTechStudents
+      },
+      total: {
+          activeStudents: trueStudents.length,
+          approvedStudents : approvedTotalStudents,
+          percentageApproved : percentageApprovedTotalStudents
+      }
+  }
+}
+
+
+//var paragraph = document.getElementById("proof");
+//paragraph.innerHTML = setGeneralData("AQP", "2016-2").tech.approvedStudents;
+
+//console.log(setGeneralData("AQP", "2016-2"));
