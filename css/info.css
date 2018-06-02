@@ -58,35 +58,27 @@ div.divTexto {
   display: inline-block;
 }
 
-.coaches{
-  bottom: 9em;
+.coaches h2, .jedis h2{
+  bottom: 14em;
   position: relative;
-  left: 47%;
-  display: inline;
+  left: 23em;
+  display: inline-block;
   box-sizing: border-box;
-}
-
-.jedis{
-  position: relative;
-  left: 45%;
+  font-size: xx-large;
 }
 
 #corchetes img{
   position: relative;
-  width: 24em;
-  top: 3em;
-  height: 17em;
-  display: inline;
+  width: 30em;
+  top: 2em;
+  height: 27em;
+  display: inline-block;
   box-sizing: border-box;
 }
 
-#corchetes2 img{
+.sprint-list{
+  bottom: 17em;
   position: relative;
-  width: 24em;
-  top: -14em;
-  left: 56.5em;
-  height: 17em;
-  display: inline-block;
-  box-sizing: border-box;
-  transform: rotate(180deg);
+  left: 24em;
+  font-size: 26px;
 }
