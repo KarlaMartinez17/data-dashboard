@@ -364,9 +364,27 @@ function averageJediMasters(sede, generacion) {
 //console.log(averageJediMasters("AQP", "2017-1"));
 
 
-//FUNCIÓN PARA OBTENER DATOS INDIVIDUALES DE LAS ESTUDIANTES DE CADA GENERACIÓN
-function getActiveStudents(sede, generacion) {
+//FUNCIÓN PARA OBTENER DATOS DE CADA SPRINT DE LA ESTUDIANTE
+function getSprintData(sprint) {
+  var newSprint = {};
+  newSprint.total = sprint.score.tech + sprint.score.hse;
+  newSprint.tech = sprint.score.tech;
+  newSprint.hse = sprint.score.hse;
+  newSprint.totalPercentage = (newSprint.total * 100) / 3000;
+  newSprint.approveSprint = newSprint.totalPercentage >= 70;
+  newSprint.techPercentage = (newSprint.tech * 100) / 1800;
+  newSprint.approveTech = newSprint.techPercentage >= 70;
+  newSprint.hsePercentage = (newSprint.hse * 100) / 1200;
+  newSprint.approveHse = newSprint.hsePercentage >= 70;
 
+  return newSprint;
+}
+
+
+
+//FUNCIÓN PARA OBTENER DATOS INDIVIDUALES DE CADA ESTUDIANTE ACTIVA
+function getActiveStudents(sede, generacion) {
+  
   var students = data[sede][generacion].students;
   var activeStudents = [];
 
@@ -384,10 +402,12 @@ function getActiveStudents(sede, generacion) {
           var passTech = false;
           var passHse = false;
           var passTotal = false;
+          var sprints = [];
 
           for(var j = 0; j < student.sprints.length; j++) {
-              averageHse += student.sprints[j].score.hse;
+              averageHse += student.sprints[j].score.hse; 
               averageTech += student.sprints[j].score.tech;
+              sprints.push(getSprintData(student.sprints[j]));
 
               console.log(student.sprints[j].score.tech);
           }
@@ -397,15 +417,15 @@ function getActiveStudents(sede, generacion) {
           minimumScoreTotal = 2100 * student.sprints.length;
 
           console.log(averageTech);
-
+          
           if(averageTech >= minimumScoreTech) {
               passTech = true;
           }
-
+          
           if(averageHse >= minimumScoreHse) {
               passHse = true;
           }
-
+          
           if(totalSprints >= minimumScoreTotal) {
               passTotal = true;
           }
@@ -414,6 +434,7 @@ function getActiveStudents(sede, generacion) {
           newStudent.passTech = passTech;
           newStudent.passHse = passHse;
           newStudent.passTotal = passTotal;
+          newStudent.sprints = sprints;
 
           activeStudents.push(newStudent);
       }
@@ -478,3 +499,4 @@ function setGeneralData(sede, generacion) {
 //paragraph.innerHTML = setGeneralData("AQP", "2016-2").tech.approvedStudents;
 
 //console.log(setGeneralData("AQP", "2016-2"));
+//console.log(getActiveStudents("AQP", "2016-2"));
