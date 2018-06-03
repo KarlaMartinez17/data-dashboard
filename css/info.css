@@ -82,10 +82,3 @@ div.divTexto {
   display: inline-block;
   box-sizing: border-box;
 }
-
-.sprint-list{
-  bottom: 17em;
-  position: relative;
-  left: 24em;
-  font-size: 26px;
-}
