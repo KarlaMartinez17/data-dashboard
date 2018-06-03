@@ -2,7 +2,6 @@
 console.log(data);
 
 // Show submenu countries
-
 var submenu = document.getElementsByClassName('submenu');
 for(var i = 0; i < submenu.length; i++ ) {
   submenu[i].addEventListener('click', function(e){
@@ -17,6 +16,21 @@ for(var i = 0; i < submenu.length; i++ ) {
   }
 }
 )};
+
+// Show submenu2 countries
+var submenuTwo = document.getElementsByClassName('submenu2');
+for(var i = 0; i < submenuTwo.length; i++ ) {
+    submenuTwo[i].addEventListener('mouseover', function(e){
+        e.preventDefault();
+        if(this.getElementsByClassName('generation')[0])
+            this.getElementsByClassName('generation')[0].classList.remove('hide');
+    });
+    submenuTwo[i].addEventListener('mouseout', function(e){
+        e.preventDefault();
+        if(this.getElementsByClassName('generation')[0])
+            this.getElementsByClassName('generation')[0].classList.add('hide');
+    });
+}
 
 //Show quick information
 
