@@ -84,192 +84,142 @@ function inactiveStudents(sede, generacion) {
 //console.log(activeStudents("AQP", "2017-1"));
 
 var containerStudents = document.getElementById('numberOfstudents');
-var elementP = document.createElement('p');
-var containerNewData = document.createElement('div');
 
 var containerInactiveStudents = document.getElementById('inactive-students');
-var elementPinactiveS = document.createElement('p');
-var containerNewDataInactiveS = document.createElement('div');
+
+var containerApprovedStudents= document.getElementById("info-students");
 
 //Event that shows info students in Arequipa, generation 2016-2
 var gen20162AQP = document.getElementById('ar20162');
 gen20162AQP.addEventListener('click', function(){
     //Active students
-  var studentsArequipa20162 = activeStudents("AQP", "2016-2");
-  var studentsActiveArquipa = document.createTextNode(studentsArequipa20162);
-  elementP.appendChild(studentsActiveArquipa);
-  containerNewData.appendChild(elementP);
-  containerStudents.appendChild(containerNewData);
+  containerStudents.innerHTML = activeStudents("AQP", "2016-2");
 
   //Inactive students
-  var inactiveStudentsArequipa20162 = inactiveStudents("AQP", "2016-2");
-  var studentsInactiveArquipa = document.createTextNode(inactiveStudentsArequipa20162);
-  elementPinactiveS.appendChild(studentsInactiveArquipa);
-  containerNewDataInactiveS.appendChild(elementPinactiveS);
-  containerInactiveStudents.appendChild(containerNewDataInactiveS);
+  containerInactiveStudents.innerHTML = inactiveStudents("AQP", "2016-2");
+
+  //Total approved students
+  containerApprovedStudents.innerHTML = setGeneralData("AQP", "2016-2").total.approvedStudents;
 })
 
 //Event that shows info students in Arequipa, generation 2017-1
 var gen20171AQP = document.getElementById('ar20171');
 gen20171AQP.addEventListener('click', function(){
     //Active students
-  var studentsArequipa20171 = activeStudents("AQP", "2017-1");
-  var studentsActiveArquipa = document.createTextNode(studentsArequipa20171);
-  elementP.appendChild(studentsActiveArquipa);
-  containerNewData.appendChild(elementP);
-  containerStudents.appendChild(containerNewData);
+  containerStudents.innerHTML = activeStudents("AQP", "2017-1");
 
   //Inactive students
-  var inactiveStudentsArequipa20171 = inactiveStudents("AQP", "2017-1");
-  var studentsInactiveArquipa = document.createTextNode(inactiveStudentsArequipa20171);
-  elementPinactiveS.appendChild(studentsInactiveArquipa);
-  containerNewDataInactiveS.appendChild(elementPinactiveS);
-  containerInactiveStudents.appendChild(containerNewDataInactiveS);
+  containerInactiveStudents.innerHTML = inactiveStudents("AQP", "2017-1");
+
+  //Total approved students
+  containerApprovedStudents.innerHTML = setGeneralData("AQP", "2017-1").total.approvedStudents;
 })
 
 //Event that shows info students in Lima, generation 2016-2
 var gen20162LIM = document.getElementById('li20162');
 gen20162LIM.addEventListener('click', function(){
     //Active students
-  var studentsLima20162 = activeStudents("LIM", "2016-2");
-  var studentsActiveLima = document.createTextNode(studentsLima20162);
-  elementP.appendChild(studentsActiveLima);
-  containerNewData.appendChild(elementP);
-  containerStudents.appendChild(containerNewData);
+  containerStudents.innerHTML = activeStudents("LIM", "2016-2");
 
   //Inactive students
-  var inactiveStudentsLima20162 = inactiveStudents("LIM", "2016-2");
-  var studentsInactiveLima = document.createTextNode(inactiveStudentsLima20162);
-  elementPinactiveS.appendChild(studentsInactiveLima);
-  containerNewDataInactiveS.appendChild(elementPinactiveS);
-  containerInactiveStudents.appendChild(containerNewDataInactiveS);
+  containerInactiveStudents.innerHTML = inactiveStudents("LIM", "2016-2");
+
+  //Total approved students
+  containerApprovedStudents.innerHTML = setGeneralData("LIM", "2016-2").total.approvedStudents;
 })
 
 //Event that shows info students in Lima, generation 2017-1
 var gen20171LIM = document.getElementById('li20171');
 gen20171LIM.addEventListener('click', function(){
     //Active students
-  var studentsLima20171 = activeStudents("LIM", "2017-1");
-  var studentsActiveLima = document.createTextNode(studentsLima20171);
-  elementP.appendChild(studentsActiveLima);
-  containerNewData.appendChild(elementP);
-  containerStudents.appendChild(containerNewData);
+  containerStudents.innerHTML = activeStudents("LIM", "2017-1");
 
     //Inactive students
-   var inactiveStudentsLima20171 = inactiveStudents("LIM", "2017-1");
-   var studentsInactiveLima = document.createTextNode(inactiveStudentsLima20171);
-   elementPinactiveS.appendChild(studentsInactiveLima);
-   containerNewDataInactiveS.appendChild(elementPinactiveS);
-   containerInactiveStudents.appendChild(containerNewDataInactiveS);
+   containerInactiveStudents.innerHTML = inactiveStudents("LIM", "2017-1");
+
+   //Total approved students
+   containerApprovedStudents.innerHTML = setGeneralData("LIM", "2017-1").total.approvedStudents;
 })
 
 //Event that shows info students in Lima, generation 2017-2
 var gen20172LIM = document.getElementById('li20172');
 gen20172LIM.addEventListener('click', function(){
-    //Active students
-  var studentsLima20172 = activeStudents("LIM", "2017-2");
-  var studentsActiveLima = document.createTextNode(studentsLima20172);
-  elementP.appendChild(studentsActiveLima);
-  containerNewData.appendChild(elementP);
-  containerStudents.appendChild(containerNewData);
+  //Active students
+  containerStudents.innerHTML = activeStudents("LIM", "2017-2");
 
   //Inactive students
- var inactiveStudentsLima20172 = inactiveStudents("LIM", "2017-2");
- var studentsInactiveLima = document.createTextNode(inactiveStudentsLima20172);
- elementPinactiveS.appendChild(studentsInactiveLima);
- containerNewDataInactiveS.appendChild(elementPinactiveS);
- containerInactiveStudents.appendChild(containerNewDataInactiveS);
+ containerInactiveStudents.innerHTML = inactiveStudents("LIM", "2017-2");
+
+  //Total approved students
+ containerApprovedStudents.innerHTML = setGeneralData("LIM", "2017-2").total.approvedStudents;
 })
 
 //Event that shows info students in Cd Mexico, generation 2017-1
 var gen20171MX = document.getElementById('cdmx20171');
 gen20171MX.addEventListener('click', function(){
       //Active students
-  var studentsMx20171 = activeStudents("CDMX", "2017-1");
-  var studentsActiveCdMx = document.createTextNode(studentsMx20171);
-  elementP.appendChild(studentsActiveCdMx);
-  containerNewData.appendChild(elementP);
-  containerStudents.appendChild(containerNewData);
+  containerStudents.innerHTML = activeStudents("CDMX", "2017-1");
 
   //Inactive students
- var inactiveStudentsMx20171 = inactiveStudents("CDMX", "2017-1");
- var studentsInactiveCdMx = document.createTextNode(inactiveStudentsMx20171);
- elementPinactiveS.appendChild(studentsInactiveCdMx);
- containerNewDataInactiveS.appendChild(elementPinactiveS);
- containerInactiveStudents.appendChild(containerNewDataInactiveS);
+  containerInactiveStudents.innerHTML = inactiveStudents("CDMX", "2017-1");
+
+ //Total approved students
+ containerApprovedStudents.innerHTML = setGeneralData("CDMX", "2017-1").total.approvedStudents;
 })
 
 //Event that shows info students in Cd Mexico, generation 2017-2
 var gen20172MX = document.getElementById('cdmx20172');
 gen20172MX.addEventListener('click', function(){
     //Active students
-  var studentsMx20172 = activeStudents("CDMX", "2017-2");
-  var studentsActiveCdMx = document.createTextNode(studentsMx20172);
-  elementP.appendChild(studentsActiveCdMx);
-  containerNewData.appendChild(elementP);
-  containerStudents.appendChild(containerNewData);
+  containerStudents.innerHTML = activeStudents("CDMX", "2017-2");
 
   //Inactive students
- var inactiveStudentsMx20172 = inactiveStudents("CDMX", "2017-2");
- var studentsInactiveCdMx = document.createTextNode(inactiveStudentsMx20172);
- elementPinactiveS.appendChild(studentsInactiveCdMx);
- containerNewDataInactiveS.appendChild(elementPinactiveS);
- containerInactiveStudents.appendChild(containerNewDataInactiveS);
+ containerInactiveStudents.innerHTML = inactiveStudents("CDMX", "2017-2");
+
+ //Total approved students
+ containerApprovedStudents.innerHTML = setGeneralData("CDMX", "2017-2").total.approvedStudents;
 })
 
 //Event that shows info students in Santiago, generation 2016-2
 var gen20162SCL = document.getElementById('s20162');
 gen20162SCL.addEventListener('click', function(){
   //Active students
-  var studentsSCL20162 = activeStudents("SCL", "2016-2");
-  var studentsActiveSCL = document.createTextNode(studentsSCL20162);
-  elementP.appendChild(studentsActiveSCL);
-  containerNewData.appendChild(elementP);
-  containerStudents.appendChild(containerNewData);
+  containerStudents.innerHTML = activeStudents("SCL", "2016-2");
 
     //Inactive students
-   var inactiveStudentsSCL20162 = inactiveStudents("SCL", "2016-2");
-   var studentsInactiveSCL = document.createTextNode(inactiveStudentsSCL20162);
-   elementPinactiveS.appendChild(studentsInactiveSCL);
-   containerNewDataInactiveS.appendChild(elementPinactiveS);
-   containerInactiveStudents.appendChild(containerNewDataInactiveS);
+   containerInactiveStudents.innerHTML = inactiveStudents("SCL", "2016-2");
+
+   //Total approved students
+   containerApprovedStudents.innerHTML = setGeneralData("SCL", "2016-2").total.approvedStudents;
 })
 
 //Event that shows info students in Santiago, generation 2017-1
 var gen20171SCL = document.getElementById('s20171');
 gen20171SCL.addEventListener('click', function(){
   //Active students
-  var studentsSCL20171 = activeStudents("SCL", "2017-1");
-  var studentsActiveSCL = document.createTextNode(studentsSCL20171);
-  elementP.appendChild(studentsActiveSCL);
-  containerNewData.appendChild(elementP);
-  containerStudents.appendChild(containerNewData);
+  containerStudents.innerHTML = activeStudents("SCL", "2017-1");
 
     //Inactive students
-   var inactiveStudentsSCL20171 = inactiveStudents("SCL", "2017-1");
-   var studentsInactiveSCL = document.createTextNode(inactiveStudentsSCL20171);
-   elementPinactiveS.appendChild(studentsInactiveSCL);
-   containerNewDataInactiveS.appendChild(elementPinactiveS);
-   containerInactiveStudents.appendChild(containerNewDataInactiveS);
+   containerInactiveStudents.innerHTML = inactiveStudents("SCL", "2017-1");
+
+   //Total approved students
+   containerApprovedStudents.innerHTML = setGeneralData("SCL", "2017-1").total.approvedStudents;
 })
 
 //Event that shows info students in Santiago, generation 2017-2
 var gen20172SCL = document.getElementById('s20172');
 gen20172SCL.addEventListener('click', function(){
   //Active students
-  var studentsSCL20172 = activeStudents("SCL", "2017-2");
-  var studentsActiveSCL = document.createTextNode(studentsSCL20172);
-  elementP.appendChild(studentsActiveSCL);
-  containerNewData.appendChild(elementP);
-  containerStudents.appendChild(containerNewData);
+  containerStudents.innerHTML = activeStudents("SCL", "2017-2");
 
     //Inactive students
-   var inactiveStudentsSCL20172 = inactiveStudents("SCL", "2017-2");
-   var studentsInactiveSCL = document.createTextNode(inactiveStudentsSCL20172);
-   elementPinactiveS.appendChild(studentsInactiveSCL);
-   containerNewDataInactiveS.appendChild(elementPinactiveS);
-   containerInactiveStudents.appendChild(containerNewDataInactiveS);
+   containerInactiveStudents.innerHTML = inactiveStudents("SCL", "2017-2");
+
+
+   //Total approved students
+   containerApprovedStudents.innerHTML = setGeneralData("CDMX", "2017-2").total.approvedStudents;
 })
+
 
 
 //FUNCIÓN NOMBRE Y PORCENTAJE ESTUDIANTES DESERTARON
