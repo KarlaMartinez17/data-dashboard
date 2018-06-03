@@ -384,7 +384,7 @@ function getSprintData(sprint) {
 
 //FUNCIÓN PARA OBTENER DATOS INDIVIDUALES DE CADA ESTUDIANTE ACTIVA
 function getActiveStudents(sede, generacion) {
-  
+
   var students = data[sede][generacion].students;
   var activeStudents = [];
 
@@ -405,7 +405,7 @@ function getActiveStudents(sede, generacion) {
           var sprints = [];
 
           for(var j = 0; j < student.sprints.length; j++) {
-              averageHse += student.sprints[j].score.hse; 
+              averageHse += student.sprints[j].score.hse;
               averageTech += student.sprints[j].score.tech;
               sprints.push(getSprintData(student.sprints[j]));
 
@@ -417,15 +417,15 @@ function getActiveStudents(sede, generacion) {
           minimumScoreTotal = 2100 * student.sprints.length;
 
           console.log(averageTech);
-          
+
           if(averageTech >= minimumScoreTech) {
               passTech = true;
           }
-          
+
           if(averageHse >= minimumScoreHse) {
               passHse = true;
           }
-          
+
           if(totalSprints >= minimumScoreTotal) {
               passTotal = true;
           }
