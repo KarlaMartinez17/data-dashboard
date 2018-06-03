@@ -27,11 +27,10 @@ div.info-user {
 }
 
 /* NAVIGATION */
-
 div.container-countries {
   padding-top: 0;
-  margin-top: 0;
-  margin-left: 11%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 div.container-countries ul {
@@ -40,39 +39,19 @@ div.container-countries ul {
   margin-top: 0;
 }
 
-div.container-countries ul > li {
-  border: 30px;
-  padding: 8px 77px;
-  display: inline-block;
-  margin-left: 12px;
+p.countries {
+  border: 3px solid #FF009E;
+  padding: 3px 14px;
+  border-radius: 10px;
+  width: 110px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-div.container-countries ul ul {
-  top: 21.5%;
-  position: absolute;
-}
-
-div.container-countries  ul.sede-cities li {
-  display: block;
-  background-color: #FFE521;
-  color: #000000;
-  text-align: left;
-  padding: 8px 20px;
-  width: 68px;
-}
-
-div.container-countries  ul.sede-cities li:hover {
-  background-color: #56F89A;
-}
-
-ul.sede-cities li.first-element {
-  margin-top: 35px;
-}
-
-div.container-countries ul.sede-cities {
-  padding-left: 0px;
-  margin-left: 0px;
-  text-align: left;
+p.countries:hover {
+  cursor: pointer;
+  background-color: #FF009E;
+  color: white;
 }
 
 .hide {
@@ -83,43 +62,47 @@ div.container-countries ul.sede-cities {
   display: block;
 }
 
-p.countries {
-  border: 3px solid #FF009E;
-  padding: 3px 14px;
-  border-radius: 10px;
+.submenu {
+  display: inline-block;
+  width: 24%;
+  box-sizing: border-box;
+  position: relative;
 }
 
-p.countries:hover {
-  cursor: pointer;
-}
-
-ul.generation {
-  width: 100px;
+.sede-cities{
   position: absolute;
-  left: 90%;
+  left: 85px;
+  z-index: 1;
 }
 
-ul.generation li.ar-generation {
-  float: left;
+.submenu2 {
   position: relative;
+  width: 200px;
+  overflow: visible;
+  padding: 1em;
+
+  cursor: pointer;
+  background-color: red;
+  color: white;
 }
 
-ul.generation > li.ar-generation {
-  margin-top: -70px;
-  margin-left: -8px;
+.generation {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: blue;
+  width: 100px;
 }
 
-ul.generation > li.ar-20171 {
-  margin-top: -36px;
-
-}
-
-ul.generation li.li-generation {
-  float: right;
-  position: relative;
+.generation > li {
+  padding: 1em;
+  font-size: 14px;
 }
 
 /* HEADER / GRAPHICS SUMMARY */
+header {
+  margin-top: -2em;
+}
 
 div.graphics-summary {
   /*border: 1px solid black;*/
