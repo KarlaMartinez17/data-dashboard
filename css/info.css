@@ -49,9 +49,16 @@ button.tab {
   width: 100px;
   position: relative;
   right: 3em;
-  background-color: #fee524;
+  background-color: #ed5e9c;
   font-size: 14px;
   font-weight: bold;
+  color: white;
+  border: none;
+}
+
+button.tab:hover{
+  background-color:#ed5e9ccf;
+  cursor: pointer;
 }
 
 div.divTexto {

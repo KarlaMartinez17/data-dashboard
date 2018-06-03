@@ -76,28 +76,43 @@ p.countries:hover {
 }
 
 .submenu2 {
-  position: relative;
-  width: 200px;
-  overflow: visible;
-  padding: 1em;
+    position: relative;
+    width: 110px;
+    overflow: visible;
+    padding: 1em;
+    cursor: pointer;
+    background-color: #fed922;
+    color: white;
+    border-radius: 10px;
+    margin-top: 2px;
+    text-align: center;
+}
 
-  cursor: pointer;
-  background-color: red;
-  color: white;
+.submenu2:hover{
+  background-color: #fed922cc
 }
 
 .generation {
   position: absolute;
   top: 0;
-  left: 100%;
-  background: blue;
-  width: 100px;
+  left: 101%;
+ 
 }
 
 .generation > li {
   padding: 1em;
   font-size: 14px;
+  background-color: #fed922;
+  width: 80px;
+  border-radius: 10px;
 }
+
+.generation > li:hover{
+  opacity: .8;
+  border-radius: 10px;
+}
+
+
 
 /* HEADER / GRAPHICS SUMMARY */
 header {
@@ -113,17 +128,27 @@ div.graphics-summary {
 }
 
 img.lab-picture {
-  margin-left: 13%;
   display: block;
+  position: relative;
+  top: 85px;
+  width: 100%;
 }
 
 button {
   width: 100px;
   height: 50px;
-  background: yellow;
+  background: #fcd922;
   position: absolute;
-  left: 45%;
+  left: 47%;
   display: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+button:hover{
+  background-color: black;
 }
 
 /* QUICK ACCESS INFORMATION */
