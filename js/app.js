@@ -87,6 +87,10 @@ var containerStudents = document.getElementById('numberOfstudents');
 
 var containerInactiveStudents = document.getElementById('inactive-students');
 
+var containerNameInactiveStudents = document.getElementById("name-inactive-students");
+
+var containerPercentageInactiveStudents = document.getElementById("percentage-inactive-students");
+
 var containerApprovedStudents= document.getElementById("info-students");
 
 //Event that shows info students in Arequipa, generation 2016-2
@@ -98,8 +102,45 @@ gen20162AQP.addEventListener('click', function(){
   //Inactive students
   containerInactiveStudents.innerHTML = inactiveStudents("AQP", "2016-2");
 
+  //Name inactive students
+  containerNameInactiveStudents.innerHTML = disableStudents("AQP", "2016-2").leave.nameStudents;
+
+  //Percentage inactive students
+  containerPercentageInactiveStudents.innerHTML = disableStudents("AQP", "2016-2").leave.percentageStudents; 
+
   //Total approved students
   containerApprovedStudents.innerHTML = setGeneralData("AQP", "2016-2").total.approvedStudents;
+
+  //GRAPHICS
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Estudaintes activas', 1.21],
+      ['Estudiantes que desertaron', 1.38],
+    ]);
+
+    // Set chart options
+    var options = {'title':'Información estudiantes',
+                   'width':500,
+                   'height':300};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }   
 })
 
 //Event that shows info students in Arequipa, generation 2017-1
@@ -111,8 +152,45 @@ gen20171AQP.addEventListener('click', function(){
   //Inactive students
   containerInactiveStudents.innerHTML = inactiveStudents("AQP", "2017-1");
 
+  //Name inactive students
+  containerNameInactiveStudents.innerHTML = disableStudents("AQP", "2017-1").leave.nameStudents;
+
+  //Percentage inactive students
+  containerPercentageInactiveStudents.innerHTML = disableStudents("AQP", "2017-1").leave.percentageStudents; 
+
   //Total approved students
   containerApprovedStudents.innerHTML = setGeneralData("AQP", "2017-1").total.approvedStudents;
+
+  //GRAPHICS
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Estudaintes activas', 1.4],
+      ['Estudiantes que desertaron', 1.22],
+    ]);
+
+    // Set chart options
+    var options = {'title':'Información estudiantes',
+                   'width':500,
+                   'height':300};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
 })
 
 //Event that shows info students in Lima, generation 2016-2
@@ -124,8 +202,45 @@ gen20162LIM.addEventListener('click', function(){
   //Inactive students
   containerInactiveStudents.innerHTML = inactiveStudents("LIM", "2016-2");
 
+  //Name inactive students
+  containerNameInactiveStudents.innerHTML = disableStudents("LIM", "2016-2").leave.nameStudents;
+
+  //Percentage inactive students
+  containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2016-2").leave.percentageStudents; 
+
   //Total approved students
   containerApprovedStudents.innerHTML = setGeneralData("LIM", "2016-2").total.approvedStudents;
+
+  //GRAPHICS
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Estudaintes activas', 1.2],
+      ['Estudiantes que desertaron', 1.42],
+    ]);
+
+    // Set chart options
+    var options = {'title':'Información estudiantes',
+                   'width':500,
+                   'height':300};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
 })
 
 //Event that shows info students in Lima, generation 2017-1
@@ -137,8 +252,45 @@ gen20171LIM.addEventListener('click', function(){
     //Inactive students
    containerInactiveStudents.innerHTML = inactiveStudents("LIM", "2017-1");
 
+   //Name inactive students
+  containerNameInactiveStudents.innerHTML = disableStudents("LIM", "2017-1").leave.nameStudents;
+
+  //Percentage inactive students
+  containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2017-1").leave.percentageStudents; 
+
    //Total approved students
    containerApprovedStudents.innerHTML = setGeneralData("LIM", "2017-1").total.approvedStudents;
+
+   //GRAPHICS
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Estudaintes activas', 2.8],
+      ['Estudiantes que desertaron', 1.16],
+    ]);
+
+    // Set chart options
+    var options = {'title':'Información estudiantes',
+                   'width':500,
+                   'height':300};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
 })
 
 //Event that shows info students in Lima, generation 2017-2
@@ -150,8 +302,45 @@ gen20172LIM.addEventListener('click', function(){
   //Inactive students
  containerInactiveStudents.innerHTML = inactiveStudents("LIM", "2017-2");
 
+ //Name inactive students
+ containerNameInactiveStudents.innerHTML = disableStudents("LIM", "2017-2").leave.nameStudents;
+
+ //Percentage inactive students
+ containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2017-2").leave.percentageStudents; 
+
   //Total approved students
  containerApprovedStudents.innerHTML = setGeneralData("LIM", "2017-2").total.approvedStudents;
+
+ //GRAPHICS
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Estudaintes activas', 2.1],
+      ['Estudiantes que desertaron', 2.8],
+    ]);
+
+    // Set chart options
+    var options = {'title':'Información estudiantes',
+                   'width':500,
+                   'height':300};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
 })
 
 //Event that shows info students in Cd Mexico, generation 2017-1
@@ -163,8 +352,45 @@ gen20171MX.addEventListener('click', function(){
   //Inactive students
   containerInactiveStudents.innerHTML = inactiveStudents("CDMX", "2017-1");
 
+  //Name inactive students
+  containerNameInactiveStudents.innerHTML = disableStudents("CDMX", "2017-1").leave.nameStudents;
+
+  //Percentage inactive students
+  containerPercentageInactiveStudents.innerHTML = disableStudents("CDMX", "2017-1").leave.percentageStudents; 
+
  //Total approved students
  containerApprovedStudents.innerHTML = setGeneralData("CDMX", "2017-1").total.approvedStudents;
+
+ //GRAPHICS
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Estudaintes activas', 1.68],
+      ['Estudiantes que desertaron', 2.8],
+    ]);
+
+    // Set chart options
+    var options = {'title':'Información estudiantes',
+                   'width':500,
+                   'height':300};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  } 
 })
 
 //Event that shows info students in Cd Mexico, generation 2017-2
@@ -176,8 +402,45 @@ gen20172MX.addEventListener('click', function(){
   //Inactive students
  containerInactiveStudents.innerHTML = inactiveStudents("CDMX", "2017-2");
 
+ //Name inactive students
+ containerNameInactiveStudents.innerHTML = disableStudents("CDMX", "2017-2").leave.nameStudents;
+
+ //Percentage inactive students
+ containerPercentageInactiveStudents.innerHTML = disableStudents("CDMX", "2017-2").leave.percentageStudents; 
+
  //Total approved students
  containerApprovedStudents.innerHTML = setGeneralData("CDMX", "2017-2").total.approvedStudents;
+
+ //GRAPHICS
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Estudaintes activas', 2.35],
+      ['Estudiantes que desertaron', 2.79],
+    ]);
+
+    // Set chart options
+    var options = {'title':'Información estudiantes',
+                   'width':500,
+                   'height':300};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  } 
 })
 
 //Event that shows info students in Santiago, generation 2016-2
@@ -189,8 +452,45 @@ gen20162SCL.addEventListener('click', function(){
     //Inactive students
    containerInactiveStudents.innerHTML = inactiveStudents("SCL", "2016-2");
 
+   //Name inactive students
+  containerNameInactiveStudents.innerHTML = disableStudents("SCL", "2016-2").leave.nameStudents;
+
+  //Percentage inactive students
+  containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2016-2").leave.percentageStudents; 
+
    //Total approved students
    containerApprovedStudents.innerHTML = setGeneralData("SCL", "2016-2").total.approvedStudents;
+
+   //GRAPHICS
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Estudaintes activas', 1.05],
+      ['Estudiantes que desertaron', 2.8],
+    ]);
+
+    // Set chart options
+    var options = {'title':'Información estudiantes',
+                   'width':500,
+                   'height':300};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  } 
 })
 
 //Event that shows info students in Santiago, generation 2017-1
@@ -202,8 +502,45 @@ gen20171SCL.addEventListener('click', function(){
     //Inactive students
    containerInactiveStudents.innerHTML = inactiveStudents("SCL", "2017-1");
 
+   //Name inactive students
+  containerNameInactiveStudents.innerHTML = disableStudents("SCL", "2017-1").leave.nameStudents;
+
+  //Percentage inactive students
+  containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2017-1").leave.percentageStudents; 
+
    //Total approved students
    containerApprovedStudents.innerHTML = setGeneralData("SCL", "2017-1").total.approvedStudents;
+
+   //GRAPHICS
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Estudaintes activas', 1.63],
+      ['Estudiantes que desertaron', 1.05],
+    ]);
+
+    // Set chart options
+    var options = {'title':'Información estudiantes',
+                   'width':500,
+                   'height':300};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  } 
 })
 
 //Event that shows info students in Santiago, generation 2017-2
@@ -215,30 +552,75 @@ gen20172SCL.addEventListener('click', function(){
     //Inactive students
    containerInactiveStudents.innerHTML = inactiveStudents("SCL", "2017-2");
 
+   //Name inactive students
+  containerNameInactiveStudents.innerHTML = disableStudents("SCL", "2017-2").leave.nameStudents;
+
+  //Percentage inactive students
+  containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2017-2").leave.percentageStudents; 
 
    //Total approved students
-   containerApprovedStudents.innerHTML = setGeneralData("CDMX", "2017-2").total.approvedStudents;
+   containerApprovedStudents.innerHTML = setGeneralData("SCL", "2017-2").total.approvedStudents;
+
+   //GRAPHICS
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Estudaintes activas', 1.28],
+      ['Estudiantes que desertaron', 1.5],
+    ]);
+
+    // Set chart options
+    var options = {'title':'Información estudiantes',
+                   'width':500,
+                   'height':300};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  } 
 })
 
 
 
 //FUNCIÓN NOMBRE Y PORCENTAJE ESTUDIANTES DESERTARON
 function disableStudents(sede, generacion) {
-  var studentsNameLeft = [];
-  var studentsLeft;
-  var studentsPercentageAndNameLeft = [];
-
-  for (var h = 0; h < data[sede][generacion].students.length; h++) {
-      if (data[sede][generacion].students[h].active === false) {
-          studentsNameLeft.push(data[sede][generacion].students[h].name);
-          studentsLeft = studentsNameLeft.length;
-      }
+    var studentsNameLeft = [];
+    var studentsLeft;
+    var studentsPercentageAndNameLeft = [];
+  
+    for (var h = 0; h < data[sede][generacion].students.length; h++) {
+        if (data[sede][generacion].students[h].active === false) {
+            studentsNameLeft.push(data[sede][generacion].students[h].name);
+            studentsLeft = studentsNameLeft.length;
+        }
+    }
+  
+    var stringNameStudentsLeft = studentsNameLeft.join("<br>");
+    
+  
+    studentsPercentageLeft = ((studentsLeft * 100) / data[sede][generacion].students.length).toFixed(2) + "%";
+    console.log(data[sede][generacion].students.length);
+  
+    return {
+        leave: {
+          nameStudents: stringNameStudentsLeft,
+          percentageStudents: studentsPercentageLeft
+        }   
+    }
   }
-
-  studentsPercentageAndNameLeft = [studentsNameLeft, Math.round((studentsLeft * 100) / data[sede][generacion].students.length) + "%"];
-
-  return studentsPercentageAndNameLeft;
-}
 
 //console.log(disableStudents("AQP", "2016-2"));
 //console.log(disableStudents("AQP", "2017-1"));
