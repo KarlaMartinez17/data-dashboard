@@ -12,16 +12,16 @@ var showTabs = function(e){
     coaches.style.display = 'block';
     jedis.style.display = 'none';
 
-    var scoreCoachesAQP20162 = document.getElementById('score-coachesAQP20162');
-    scoreCoachesAQP20162.innerHTML = averageCoaches("AQP", "2016-2");
+    var scoreCoachesSCL20162 = document.getElementById('score-coachesSCL20162');
+    scoreCoachesSCL20162.innerHTML = averageCoaches("SCL", "2016-2");
 
   } else if(selectedTab == 'tabJedi') {
     students.style.display = 'none';
     coaches.style.display = 'none';
     jedis.style.display = 'block';
 
-    var scoreJedisAQP20162 = document.getElementById('score-jedisAQP20162');
-    scoreJedisAQP20162.innerHTML = averageJediMasters("AQP", "2016-2");
+    var scoreJedisSCL20162 = document.getElementById('score-jedisSCL20162');
+    scoreJedisSCL20162.innerHTML = averageJediMasters("SCL", "2016-2");
   }
 }
 
@@ -39,8 +39,6 @@ var loadPage = function(){
 }
 
 loadPage();
-
-
 
 //PUNTUACIÓN PROMEDIO COACHES
 function averageCoaches(sede, generacion) {

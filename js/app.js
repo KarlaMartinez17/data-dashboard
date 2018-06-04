@@ -33,14 +33,13 @@ for(var i = 0; i < submenuTwo.length; i++ ) {
 }
 
 //Show quick information
-
 var generation = document.getElementsByClassName('generation');
 for(var j = 0; j < generation.length; j++) {
   generation[j].addEventListener('click', function(e){
-    var button = document.getElementById('main-button');
+    //var button = document.getElementById('main-button');
     var mainImage = document.getElementById('main-picture');
     var quickInfo = document.getElementById('quickInfo');
-    button.style.display = 'block';
+    //button.style.display = 'block';
     mainImage.style.display = 'none';
     quickInfo.style.display = 'block';
   })
@@ -96,6 +95,9 @@ var containerApprovedStudents= document.getElementById("info-students");
 //Event that shows info students in Arequipa, generation 2016-2
 var gen20162AQP = document.getElementById('ar20162');
 gen20162AQP.addEventListener('click', function(){
+  var button = document.getElementById('button-AQP20162');
+  button.style.display = 'block';
+
     //Active students
   containerStudents.innerHTML = activeStudents("AQP", "2016-2");
 
@@ -106,7 +108,7 @@ gen20162AQP.addEventListener('click', function(){
   containerNameInactiveStudents.innerHTML = disableStudents("AQP", "2016-2").leave.nameStudents;
 
   //Percentage inactive students
-  containerPercentageInactiveStudents.innerHTML = disableStudents("AQP", "2016-2").leave.percentageStudents; 
+  containerPercentageInactiveStudents.innerHTML = disableStudents("AQP", "2016-2").leave.percentageStudents;
 
   //Total approved students
   containerApprovedStudents.innerHTML = setGeneralData("AQP", "2016-2").total.approvedStudents;
@@ -140,12 +142,15 @@ gen20162AQP.addEventListener('click', function(){
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
     chart.draw(data, options);
-  }   
+  }
 })
 
 //Event that shows info students in Arequipa, generation 2017-1
 var gen20171AQP = document.getElementById('ar20171');
 gen20171AQP.addEventListener('click', function(){
+  var button = document.getElementById('button-AQP20171');
+  button.style.display = 'block';
+
     //Active students
   containerStudents.innerHTML = activeStudents("AQP", "2017-1");
 
@@ -156,7 +161,7 @@ gen20171AQP.addEventListener('click', function(){
   containerNameInactiveStudents.innerHTML = disableStudents("AQP", "2017-1").leave.nameStudents;
 
   //Percentage inactive students
-  containerPercentageInactiveStudents.innerHTML = disableStudents("AQP", "2017-1").leave.percentageStudents; 
+  containerPercentageInactiveStudents.innerHTML = disableStudents("AQP", "2017-1").leave.percentageStudents;
 
   //Total approved students
   containerApprovedStudents.innerHTML = setGeneralData("AQP", "2017-1").total.approvedStudents;
@@ -196,6 +201,9 @@ gen20171AQP.addEventListener('click', function(){
 //Event that shows info students in Lima, generation 2016-2
 var gen20162LIM = document.getElementById('li20162');
 gen20162LIM.addEventListener('click', function(){
+  var button = document.getElementById('button-LIM20162');
+  button.style.display = 'block';
+
     //Active students
   containerStudents.innerHTML = activeStudents("LIM", "2016-2");
 
@@ -206,7 +214,7 @@ gen20162LIM.addEventListener('click', function(){
   containerNameInactiveStudents.innerHTML = disableStudents("LIM", "2016-2").leave.nameStudents;
 
   //Percentage inactive students
-  containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2016-2").leave.percentageStudents; 
+  containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2016-2").leave.percentageStudents;
 
   //Total approved students
   containerApprovedStudents.innerHTML = setGeneralData("LIM", "2016-2").total.approvedStudents;
@@ -246,6 +254,9 @@ gen20162LIM.addEventListener('click', function(){
 //Event that shows info students in Lima, generation 2017-1
 var gen20171LIM = document.getElementById('li20171');
 gen20171LIM.addEventListener('click', function(){
+  var button = document.getElementById('button-LIM20171');
+  button.style.display = 'block';
+
     //Active students
   containerStudents.innerHTML = activeStudents("LIM", "2017-1");
 
@@ -256,7 +267,7 @@ gen20171LIM.addEventListener('click', function(){
   containerNameInactiveStudents.innerHTML = disableStudents("LIM", "2017-1").leave.nameStudents;
 
   //Percentage inactive students
-  containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2017-1").leave.percentageStudents; 
+  containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2017-1").leave.percentageStudents;
 
    //Total approved students
    containerApprovedStudents.innerHTML = setGeneralData("LIM", "2017-1").total.approvedStudents;
@@ -296,6 +307,9 @@ gen20171LIM.addEventListener('click', function(){
 //Event that shows info students in Lima, generation 2017-2
 var gen20172LIM = document.getElementById('li20172');
 gen20172LIM.addEventListener('click', function(){
+  var button = document.getElementById('button-LIM20172');
+  button.style.display = 'block';
+
   //Active students
   containerStudents.innerHTML = activeStudents("LIM", "2017-2");
 
@@ -306,7 +320,7 @@ gen20172LIM.addEventListener('click', function(){
  containerNameInactiveStudents.innerHTML = disableStudents("LIM", "2017-2").leave.nameStudents;
 
  //Percentage inactive students
- containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2017-2").leave.percentageStudents; 
+ containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2017-2").leave.percentageStudents;
 
   //Total approved students
  containerApprovedStudents.innerHTML = setGeneralData("LIM", "2017-2").total.approvedStudents;
@@ -346,6 +360,9 @@ gen20172LIM.addEventListener('click', function(){
 //Event that shows info students in Cd Mexico, generation 2017-1
 var gen20171MX = document.getElementById('cdmx20171');
 gen20171MX.addEventListener('click', function(){
+  var button = document.getElementById('button-CDMX20171');
+  button.style.display = 'block';
+
       //Active students
   containerStudents.innerHTML = activeStudents("CDMX", "2017-1");
 
@@ -356,7 +373,7 @@ gen20171MX.addEventListener('click', function(){
   containerNameInactiveStudents.innerHTML = disableStudents("CDMX", "2017-1").leave.nameStudents;
 
   //Percentage inactive students
-  containerPercentageInactiveStudents.innerHTML = disableStudents("CDMX", "2017-1").leave.percentageStudents; 
+  containerPercentageInactiveStudents.innerHTML = disableStudents("CDMX", "2017-1").leave.percentageStudents;
 
  //Total approved students
  containerApprovedStudents.innerHTML = setGeneralData("CDMX", "2017-1").total.approvedStudents;
@@ -390,12 +407,15 @@ gen20171MX.addEventListener('click', function(){
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
     chart.draw(data, options);
-  } 
+  }
 })
 
 //Event that shows info students in Cd Mexico, generation 2017-2
 var gen20172MX = document.getElementById('cdmx20172');
 gen20172MX.addEventListener('click', function(){
+  var button = document.getElementById('button-CDMX20172');
+  button.style.display = 'block';
+
     //Active students
   containerStudents.innerHTML = activeStudents("CDMX", "2017-2");
 
@@ -406,7 +426,7 @@ gen20172MX.addEventListener('click', function(){
  containerNameInactiveStudents.innerHTML = disableStudents("CDMX", "2017-2").leave.nameStudents;
 
  //Percentage inactive students
- containerPercentageInactiveStudents.innerHTML = disableStudents("CDMX", "2017-2").leave.percentageStudents; 
+ containerPercentageInactiveStudents.innerHTML = disableStudents("CDMX", "2017-2").leave.percentageStudents;
 
  //Total approved students
  containerApprovedStudents.innerHTML = setGeneralData("CDMX", "2017-2").total.approvedStudents;
@@ -440,12 +460,15 @@ gen20172MX.addEventListener('click', function(){
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
     chart.draw(data, options);
-  } 
+  }
 })
 
 //Event that shows info students in Santiago, generation 2016-2
 var gen20162SCL = document.getElementById('s20162');
 gen20162SCL.addEventListener('click', function(){
+  var button = document.getElementById('button-SCL20162');
+  button.style.display = 'block';
+
   //Active students
   containerStudents.innerHTML = activeStudents("SCL", "2016-2");
 
@@ -456,7 +479,7 @@ gen20162SCL.addEventListener('click', function(){
   containerNameInactiveStudents.innerHTML = disableStudents("SCL", "2016-2").leave.nameStudents;
 
   //Percentage inactive students
-  containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2016-2").leave.percentageStudents; 
+  containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2016-2").leave.percentageStudents;
 
    //Total approved students
    containerApprovedStudents.innerHTML = setGeneralData("SCL", "2016-2").total.approvedStudents;
@@ -490,12 +513,15 @@ gen20162SCL.addEventListener('click', function(){
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
     chart.draw(data, options);
-  } 
+  }
 })
 
 //Event that shows info students in Santiago, generation 2017-1
 var gen20171SCL = document.getElementById('s20171');
 gen20171SCL.addEventListener('click', function(){
+  var button = document.getElementById('button-SCL20171');
+  button.style.display = 'block';
+
   //Active students
   containerStudents.innerHTML = activeStudents("SCL", "2017-1");
 
@@ -506,7 +532,7 @@ gen20171SCL.addEventListener('click', function(){
   containerNameInactiveStudents.innerHTML = disableStudents("SCL", "2017-1").leave.nameStudents;
 
   //Percentage inactive students
-  containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2017-1").leave.percentageStudents; 
+  containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2017-1").leave.percentageStudents;
 
    //Total approved students
    containerApprovedStudents.innerHTML = setGeneralData("SCL", "2017-1").total.approvedStudents;
@@ -540,12 +566,15 @@ gen20171SCL.addEventListener('click', function(){
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
     chart.draw(data, options);
-  } 
+  }
 })
 
 //Event that shows info students in Santiago, generation 2017-2
 var gen20172SCL = document.getElementById('s20172');
 gen20172SCL.addEventListener('click', function(){
+  var button = document.getElementById('button-SCL20172');
+  button.style.display = 'block';
+
   //Active students
   containerStudents.innerHTML = activeStudents("SCL", "2017-2");
 
@@ -556,7 +585,7 @@ gen20172SCL.addEventListener('click', function(){
   containerNameInactiveStudents.innerHTML = disableStudents("SCL", "2017-2").leave.nameStudents;
 
   //Percentage inactive students
-  containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2017-2").leave.percentageStudents; 
+  containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2017-2").leave.percentageStudents;
 
    //Total approved students
    containerApprovedStudents.innerHTML = setGeneralData("SCL", "2017-2").total.approvedStudents;
@@ -590,7 +619,7 @@ gen20172SCL.addEventListener('click', function(){
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
     chart.draw(data, options);
-  } 
+  }
 })
 
 
@@ -600,25 +629,25 @@ function disableStudents(sede, generacion) {
     var studentsNameLeft = [];
     var studentsLeft;
     var studentsPercentageAndNameLeft = [];
-  
+
     for (var h = 0; h < data[sede][generacion].students.length; h++) {
         if (data[sede][generacion].students[h].active === false) {
             studentsNameLeft.push(data[sede][generacion].students[h].name);
             studentsLeft = studentsNameLeft.length;
         }
     }
-  
+
     var stringNameStudentsLeft = studentsNameLeft.join("<br>");
-    
-  
+
+
     studentsPercentageLeft = ((studentsLeft * 100) / data[sede][generacion].students.length).toFixed(2) + "%";
     console.log(data[sede][generacion].students.length);
-  
+
     return {
         leave: {
           nameStudents: stringNameStudentsLeft,
           percentageStudents: studentsPercentageLeft
-        }   
+        }
     }
   }
 
@@ -657,44 +686,6 @@ function percentageStudentsAccomplishAddPass(sede, generacion) {
 //console.log(percentageStudentsAccomplishAddPass("AQP", "2016-2"));
 //console.log(percentageStudentsAccomplishAddPass("AQP", "2017-1"));
 
-//PUNTUACIÓN PROMEDIO COACHES
-function averageCoaches(sede, generacion) {
-  var sprintCoach = [];
-  var averageCoach= 0;
-
-  for (var c = 0; c < data[sede][generacion].ratings.length; c++) {
-      sprintCoach.push(data[sede][generacion].ratings[c].teacher);
-  }
-  console.log(sprintCoach);
-
-  for (var e = 0; e < sprintCoach.length; e++) {
-      averageCoach += sprintCoach[e] / data[sede][generacion].ratings.length ;
-  }
-  return averageCoach;
-}
-
-//console.log(averageCoaches("AQP", "2016-2"));
-//console.log(averageCoaches("AQP", "2017-1"));
-
-//PUNTUACIÓN PROMEDIO JEDI MASTERS
-function averageJediMasters(sede, generacion) {
-  var sprintJedi = [];
-  var averageJedi= 0;
-
-  for (var c = 0; c < data[sede][generacion].ratings.length; c++) {
-      sprintJedi.push(data[sede][generacion].ratings[c].jedi);
-  }
-  console.log(sprintJedi);
-
-  for (var e = 0; e < sprintJedi.length; e++) {
-      averageJedi += sprintJedi[e] / data[sede][generacion].ratings.length ;
-  }
-  return averageJedi;
-}
-
-//console.log(averageJediMasters("AQP", "2016-2"));
-//console.log(averageJediMasters("AQP", "2017-1"));
-
 
 //FUNCIÓN PARA OBTENER DATOS DE CADA SPRINT DE LA ESTUDIANTE
 function getSprintData(sprint) {
@@ -711,8 +702,6 @@ function getSprintData(sprint) {
 
   return newSprint;
 }
-
-
 
 //FUNCIÓN PARA OBTENER DATOS INDIVIDUALES DE CADA ESTUDIANTE ACTIVA
 function getActiveStudents(sede, generacion) {

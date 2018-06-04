@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard Laboratoria</title>
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--Logo-->
+     <div class="container-logo">
+       <div class="main-logo">
+         <h1>Dashboard</h1>
+         <img class="lab-logo" src="assets/images/laboratoria_logo.png" alt="laboratoria-logo">
+       </div>
+     </div>
+     <hr>
+     <!--Navigation-->
+     <nav>
+       <div id="contentSection" class="container">
+        <ul class="containerTabs">
+          <li><button type="button" class="tab" name="button" data-tabSeleccionado="tabEstudiantes">Estudiantes</button></li>
+          <li><button type="button" class="tab" name="button" data-tabSeleccionado="tabCoachs">Coaches</button></li>
+          <li><button type="button" class="tab" name="button" data-tabSeleccionado="tabJedi">Jedis</button></li>
+        </ul>
+       <div>
+         <!--Section Students-->
+       <section id="estudiantes" class="students">
+          <div>
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="divTexto">
+            <h3>Nombre</h3>
+            <ul>
+              <li>Promedio de notas: </li>
+              <li>Promedio notas HSE: </li>
+              <li>Promedio de notas tecnicas: </li>
+            </ul>
+          </div>
+        </section>
+       <!--Section Coaches-->
+        <section id="coaches2" class="coaches">
+          <div class="divTexto">
+            <div id="corchetes">
+              <img src="assets/images/corchetes.png" alt="corchetes">
+            </div>
+             <div>
+               <h2>Puntuación Promedio: </h2>
+             </div>
+             <div class="score-coaches" id="score-coachesLIM20171">
+             </div>
+          </div>
+        </section>
+        <!--Section Jedis-->
+        <section id="jedi" class="jedis">
+          <div class="divTexto">
+            <div id="corchetes">
+              <img src="assets/images/corchetes.png" alt="corchetes">
+            </div>
+            <div>
+              <h2>Puntuación Promedio:</h2>
+            </div>
+            <div class="score-jedis" id="score-jedisLIM20171">
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </nav>
+ <!-- Database -->
+  <script src="js/data.js"></script>
+    <!-- Files JS -->
+    <script src="js/info4.js"></script>
+   </body>
+ </html>

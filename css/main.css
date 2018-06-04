@@ -96,7 +96,7 @@ p.countries:hover {
   position: absolute;
   top: 0;
   left: 101%;
- 
+
 }
 
 .generation > li {
@@ -134,7 +134,7 @@ img.lab-picture {
   width: 100%;
 }
 
-button {
+button.more-info {
   width: 100px;
   height: 50px;
   background: #fcd922;
@@ -147,7 +147,7 @@ button {
   font-weight: bolder;
 }
 
-button:hover{
+button.more-info:hover{
   background-color: black;
 }
 

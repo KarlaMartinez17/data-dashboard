@@ -65,6 +65,8 @@ div.divTexto {
   display: inline-block;
 }
 
+/* GENERAL SECTIONS */
+
 .coaches h2, .jedis h2{
   bottom: 14em;
   position: relative;
@@ -82,3 +84,16 @@ div.divTexto {
   display: inline-block;
   box-sizing: border-box;
 }
+
+/* SECTION STUDENTS */
+
+/* SECTION COACHES */
+
+div.score-coaches, div.score-jedis {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  font-size: 50px;
+}
+
+/* SECTION JEDIS */
