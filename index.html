@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Dashboard Laboratoria</title>
     <link rel="stylesheet" href="css/main.css">
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
   <body>
    <!--Logo-->
@@ -78,6 +80,9 @@
         <div class="">
           <img id="main-picture" class="lab-picture" src="assets/images/lab-picture.png" alt="lab-picture">
         </div>
+        <!--Div that will hold the pie chart-->
+    <div id="chart_div">
+    </div>
       </div>
      <a href="info.html"><button id="main-button" type="button" name="button"> Más información</button></a>
     </div>
@@ -95,6 +100,12 @@
         <div>
           <p>Estudiantes que desertaron</p>
           <div id="inactive-students">
+          </div>
+          <br>
+          <div id="name-inactive-students">
+          </div>
+          <br>
+          <div id="percentage-inactive-students">
           </div>
         </div>
       </div>
