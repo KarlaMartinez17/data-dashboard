@@ -92,6 +92,18 @@ var containerPercentageInactiveStudents = document.getElementById("percentage-in
 
 var containerApprovedStudents= document.getElementById("info-students");
 
+var containerPercentageTotalStudents= document.getElementById("percentage-total");
+
+var containerQuantityTechStudents= document.getElementById("quantity-tech");
+
+var containerPercentageTechStudents= document.getElementById("percentage-tech");
+
+var containerQuantityHseStudents= document.getElementById("quantity-hse");
+
+var containerPercentageHseStudents= document.getElementById("percentage-hse");
+
+
+
 //Event that shows info students in Arequipa, generation 2016-2
 var gen20162AQP = document.getElementById('ar20162');
 gen20162AQP.addEventListener('click', function(){
@@ -111,7 +123,23 @@ gen20162AQP.addEventListener('click', function(){
   containerPercentageInactiveStudents.innerHTML = disableStudents("AQP", "2016-2").leave.percentageStudents;
 
   //Total approved students
-  containerApprovedStudents.innerHTML = setGeneralData("AQP", "2016-2").total.approvedStudents;
+  containerApprovedStudents.innerHTML = "Cantidad Total: " + setGeneralData("AQP", "2016-2").total.approvedStudents;
+
+  //Percentage total approved students
+  containerPercentageTotalStudents.innerHTML = "Porcentaje Total: " + setGeneralData("AQP", "2016-2").total.percentageApproved;
+
+  //Quantity approved tech students
+  containerQuantityTechStudents.innerHTML =  "Cantidad Tech : " + setGeneralData("AQP", "2016-2").tech.approvedStudents;
+
+  //Percentage approved tech students
+  containerPercentageTechStudents.innerHTML = "Porcentaje Tech: " + setGeneralData("AQP", "2016-2").tech.percentageApproved;
+
+  //Quantity approved hse students
+  containerQuantityHseStudents.innerHTML =  "Cantidad HSE: " + setGeneralData("AQP", "2016-2").hse.approvedStudents;
+
+  //Percentage approved hse students
+  containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("AQP", "2016-2").hse.percentageApproved;
+
 
   //GRAPHICS
   // Load the Visualization API and the corechart package.
@@ -164,7 +192,23 @@ gen20171AQP.addEventListener('click', function(){
   containerPercentageInactiveStudents.innerHTML = disableStudents("AQP", "2017-1").leave.percentageStudents;
 
   //Total approved students
-  containerApprovedStudents.innerHTML = setGeneralData("AQP", "2017-1").total.approvedStudents;
+ containerApprovedStudents.innerHTML = "Cantidad Total: " + setGeneralData("AQP", "2017-1").total.approvedStudents;
+
+ //Percentage total approved students
+ containerPercentageTotalStudents.innerHTML = "Porcentaje Total: " + setGeneralData("AQP", "2017-1").total.percentageApproved;
+
+ //Quantity approved tech students
+ containerQuantityTechStudents.innerHTML =  "Cantidad Tech : " + setGeneralData("AQP", "2017-1").tech.approvedStudents;
+
+ //Percentage approved tech students
+ containerPercentageTechStudents.innerHTML = "Porcentaje Tech: " + setGeneralData("AQP", "2017-1").tech.percentageApproved;
+
+ //Quantity approved hse students
+ containerQuantityHseStudents.innerHTML =  "Cantidad HSE: " + setGeneralData("AQP", "2017-1").hse.approvedStudents;
+
+ //Percentage approved hse students
+ containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("AQP", "2017-1").hse.percentageApproved;
+
 
   //GRAPHICS
   // Load the Visualization API and the corechart package.
@@ -217,7 +261,23 @@ gen20162LIM.addEventListener('click', function(){
   containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2016-2").leave.percentageStudents;
 
   //Total approved students
-  containerApprovedStudents.innerHTML = setGeneralData("LIM", "2016-2").total.approvedStudents;
+ containerApprovedStudents.innerHTML = "Cantidad Total: " + setGeneralData("LIM", "2016-2").total.approvedStudents;
+
+ //Percentage total approved students
+ containerPercentageTotalStudents.innerHTML = "Porcentaje Total: " + setGeneralData("LIM", "2016-2").total.percentageApproved;
+
+ //Quantity approved tech students
+ containerQuantityTechStudents.innerHTML =  "Cantidad Tech : " + setGeneralData("LIM", "2016-2").tech.approvedStudents;
+
+ //Percentage approved tech students
+ containerPercentageTechStudents.innerHTML = "Porcentaje Tech: " + setGeneralData("LIM", "2016-2").tech.percentageApproved;
+
+ //Quantity approved hse students
+ containerQuantityHseStudents.innerHTML =  "Cantidad HSE: " + setGeneralData("LIM", "2016-2").hse.approvedStudents;
+
+ //Percentage approved hse students
+ containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("LIM", "2016-2").hse.percentageApproved;
+
 
   //GRAPHICS
   // Load the Visualization API and the corechart package.
@@ -269,8 +329,24 @@ gen20171LIM.addEventListener('click', function(){
   //Percentage inactive students
   containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2017-1").leave.percentageStudents;
 
-   //Total approved students
-   containerApprovedStudents.innerHTML = setGeneralData("LIM", "2017-1").total.approvedStudents;
+  //Total approved students
+  containerApprovedStudents.innerHTML = "Cantidad Total: " + setGeneralData("LIM", "2017-1").total.approvedStudents;
+
+  //Percentage total approved students
+  containerPercentageTotalStudents.innerHTML = "Porcentaje Total: " + setGeneralData("LIM", "2017-1").total.percentageApproved;
+ 
+  //Quantity approved tech students
+  containerQuantityTechStudents.innerHTML =  "Cantidad Tech : " + setGeneralData("LIM", "2017-1").tech.approvedStudents;
+ 
+  //Percentage approved tech students
+  containerPercentageTechStudents.innerHTML = "Porcentaje Tech: " + setGeneralData("LIM", "2017-1").tech.percentageApproved;
+ 
+  //Quantity approved hse students
+  containerQuantityHseStudents.innerHTML =  "Cantidad HSE: " + setGeneralData("LIM", "2017-1").hse.approvedStudents;
+ 
+  //Percentage approved hse students
+  containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("LIM", "2017-1").hse.percentageApproved;
+
 
    //GRAPHICS
   // Load the Visualization API and the corechart package.
@@ -322,8 +398,24 @@ gen20172LIM.addEventListener('click', function(){
  //Percentage inactive students
  containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2017-2").leave.percentageStudents;
 
-  //Total approved students
- containerApprovedStudents.innerHTML = setGeneralData("LIM", "2017-2").total.approvedStudents;
+//Total approved students
+containerApprovedStudents.innerHTML = "Cantidad Total: " + setGeneralData("LIM", "2017-2").total.approvedStudents;
+
+//Percentage total approved students
+containerPercentageTotalStudents.innerHTML = "Porcentaje Total: " + setGeneralData("LIM", "2017-2").total.percentageApproved;
+
+//Quantity approved tech students
+containerQuantityTechStudents.innerHTML =  "Cantidad Tech : " + setGeneralData("LIM", "2017-2").tech.approvedStudents;
+
+//Percentage approved tech students
+containerPercentageTechStudents.innerHTML = "Porcentaje Tech: " + setGeneralData("LIM", "2017-2").tech.percentageApproved;
+
+//Quantity approved hse students
+containerQuantityHseStudents.innerHTML =  "Cantidad HSE: " + setGeneralData("LIM", "2017-2").hse.approvedStudents;
+
+//Percentage approved hse students
+containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("LIM", "2017-2").hse.percentageApproved;
+
 
  //GRAPHICS
   // Load the Visualization API and the corechart package.
@@ -376,7 +468,23 @@ gen20171MX.addEventListener('click', function(){
   containerPercentageInactiveStudents.innerHTML = disableStudents("CDMX", "2017-1").leave.percentageStudents;
 
  //Total approved students
- containerApprovedStudents.innerHTML = setGeneralData("CDMX", "2017-1").total.approvedStudents;
+ containerApprovedStudents.innerHTML = "Cantidad Total: " + setGeneralData("CDMX", "2017-1").total.approvedStudents;
+
+ //Percentage total approved students
+ containerPercentageTotalStudents.innerHTML = "Porcentaje Total: " + setGeneralData("CDMX", "2017-1").total.percentageApproved;
+
+ //Quantity approved tech students
+ containerQuantityTechStudents.innerHTML =  "Cantidad Tech : " + setGeneralData("CDMX", "2017-1").tech.approvedStudents;
+
+ //Percentage approved tech students
+ containerPercentageTechStudents.innerHTML = "Porcentaje Tech: " + setGeneralData("CDMX", "2017-1").tech.percentageApproved;
+
+ //Quantity approved hse students
+ containerQuantityHseStudents.innerHTML =  "Cantidad HSE: " + setGeneralData("CDMX", "2017-1").hse.approvedStudents;
+
+ //Percentage approved hse students
+ containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("CDMX", "2017-1").hse.percentageApproved;
+
 
  //GRAPHICS
   // Load the Visualization API and the corechart package.
@@ -429,7 +537,23 @@ gen20172MX.addEventListener('click', function(){
  containerPercentageInactiveStudents.innerHTML = disableStudents("CDMX", "2017-2").leave.percentageStudents;
 
  //Total approved students
- containerApprovedStudents.innerHTML = setGeneralData("CDMX", "2017-2").total.approvedStudents;
+ containerApprovedStudents.innerHTML = "Cantidad Total: " + setGeneralData("CDMX", "2017-2").total.approvedStudents;
+
+ //Percentage total approved students
+ containerPercentageTotalStudents.innerHTML = "Porcentaje Total: " + setGeneralData("CDMX", "2017-2").total.percentageApproved;
+
+ //Quantity approved tech students
+ containerQuantityTechStudents.innerHTML =  "Cantidad Tech : " + setGeneralData("CDMX", "2017-2").tech.approvedStudents;
+
+ //Percentage approved tech students
+ containerPercentageTechStudents.innerHTML = "Porcentaje Tech: " + setGeneralData("CDMX", "2017-2").tech.percentageApproved;
+
+ //Quantity approved hse students
+ containerQuantityHseStudents.innerHTML =  "Cantidad HSE: " + setGeneralData("CDMX", "2017-2").hse.approvedStudents;
+
+ //Percentage approved hse students
+ containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("CDMX", "2017-2").hse.percentageApproved;
+
 
  //GRAPHICS
   // Load the Visualization API and the corechart package.
@@ -482,7 +606,23 @@ gen20162SCL.addEventListener('click', function(){
   containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2016-2").leave.percentageStudents;
 
    //Total approved students
-   containerApprovedStudents.innerHTML = setGeneralData("SCL", "2016-2").total.approvedStudents;
+ containerApprovedStudents.innerHTML = "Cantidad Total: " + setGeneralData("SCL", "2016-2").total.approvedStudents;
+
+ //Percentage total approved students
+ containerPercentageTotalStudents.innerHTML = "Porcentaje Total: " + setGeneralData("SCL", "2016-2").total.percentageApproved;
+
+ //Quantity approved tech students
+ containerQuantityTechStudents.innerHTML =  "Cantidad Tech : " + setGeneralData("SCL", "2016-2").tech.approvedStudents;
+
+ //Percentage approved tech students
+ containerPercentageTechStudents.innerHTML = "Porcentaje Tech: " + setGeneralData("SCL", "2016-2").tech.percentageApproved;
+
+ //Quantity approved hse students
+ containerQuantityHseStudents.innerHTML =  "Cantidad HSE: " + setGeneralData("SCL", "2016-2").hse.approvedStudents;
+
+ //Percentage approved hse students
+ containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("SCL", "2016-2").hse.percentageApproved;
+
 
    //GRAPHICS
   // Load the Visualization API and the corechart package.
@@ -534,8 +674,24 @@ gen20171SCL.addEventListener('click', function(){
   //Percentage inactive students
   containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2017-1").leave.percentageStudents;
 
-   //Total approved students
-   containerApprovedStudents.innerHTML = setGeneralData("SCL", "2017-1").total.approvedStudents;
+//Total approved students
+containerApprovedStudents.innerHTML = "Cantidad Total: " + setGeneralData("SCL", "2017-1").total.approvedStudents;
+
+//Percentage total approved students
+containerPercentageTotalStudents.innerHTML = "Porcentaje Total: " + setGeneralData("SCL", "2017-1").total.percentageApproved;
+
+//Quantity approved tech students
+containerQuantityTechStudents.innerHTML =  "Cantidad Tech : " + setGeneralData("SCL", "2017-1").tech.approvedStudents;
+
+//Percentage approved tech students
+containerPercentageTechStudents.innerHTML = "Porcentaje Tech: " + setGeneralData("SCL", "2017-1").tech.percentageApproved;
+
+//Quantity approved hse students
+containerQuantityHseStudents.innerHTML =  "Cantidad HSE: " + setGeneralData("SCL", "2017-1").hse.approvedStudents;
+
+//Percentage approved hse students
+containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("SCL", "2017-1").hse.percentageApproved;
+
 
    //GRAPHICS
   // Load the Visualization API and the corechart package.
@@ -587,8 +743,24 @@ gen20172SCL.addEventListener('click', function(){
   //Percentage inactive students
   containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2017-2").leave.percentageStudents;
 
-   //Total approved students
-   containerApprovedStudents.innerHTML = setGeneralData("SCL", "2017-2").total.approvedStudents;
+//Total approved students
+containerApprovedStudents.innerHTML = "Cantidad Total: " + setGeneralData("SCL", "2017-2").total.approvedStudents;
+
+//Percentage total approved students
+containerPercentageTotalStudents.innerHTML = "Porcentaje Total: " + setGeneralData("SCL", "2017-2").total.percentageApproved;
+
+//Quantity approved tech students
+containerQuantityTechStudents.innerHTML =  "Cantidad Tech : " + setGeneralData("SCL", "2017-2").tech.approvedStudents;
+
+//Percentage approved tech students
+containerPercentageTechStudents.innerHTML = "Porcentaje Tech: " + setGeneralData("SCL", "2017-2").tech.percentageApproved;
+
+//Quantity approved hse students
+containerQuantityHseStudents.innerHTML =  "Cantidad HSE: " + setGeneralData("SCL", "2017-2").hse.approvedStudents;
+
+//Percentage approved hse students
+containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("SCL", "2017-2").hse.percentageApproved;
+
 
    //GRAPHICS
   // Load the Visualization API and the corechart package.
@@ -792,9 +964,9 @@ function setGeneralData(sede, generacion) {
       }
   }
 
-  percentageApprovedTotalStudents = ((100 * approvedTotalStudents)  / trueStudents.length) + "%";
-  percentageApprovedTechStudents = ((100 * approvedTechStudents)  / trueStudents.length) + "%";
-  percentageApprovedHseStudents = ((100 * approvedHseStudents)  / trueStudents.length) + "%";
+  percentageApprovedTotalStudents = ((100 * approvedTotalStudents)  / trueStudents.length).toFixed(2) + "%";
+  percentageApprovedTechStudents = ((100 * approvedTechStudents)  / trueStudents.length).toFixed(2) + "%";
+  percentageApprovedHseStudents = ((100 * approvedHseStudents)  / trueStudents.length).toFixed(2) + "%";
 
   return {
       hse: {
