@@ -282,18 +282,14 @@ Conforme las entrevistas que se realizaron y analizando la lluvia de ideas inici
 
 ## PROTOTIPADO
 
-![Mock up 1](assets/images/mockup0.png)
+![Mock up 1](assets/images/mockup1.png)
 
-![Mock up 2](assets/images/mockup1.png)
+![Mock up 2](assets/images/mockup2.png)
 
-![Mock up 3](assets/images/mockup2.png)
+![Mock up 3](assets/images/mockup3.png)
 
-![Mock up 4](assets/images/mockup3.png)
+![Mock up 4](assets/images/mockup4.png)
 
-![Mock up 5](assets/images/mockup4.png)
+![Mock up 5](assets/images/mockup5.png)
 
-![Mock up 6](assets/images/mockup5.png)
-
-![Mock up 7](assets/images/mockup6.png)
-
-![Mock up 8](assets/images/mockup7.png)
+![Mock up 6](assets/images/mockup6.png)
