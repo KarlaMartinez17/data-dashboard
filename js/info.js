@@ -214,3 +214,28 @@ function setGeneralData(sede, generacion) {
 
 //console.log(setGeneralData("AQP", "2016-2"));
 //console.log(getActiveStudents("AQP", "2016-2"));
+
+//FUNCIÓN NÚMERO DE ESTUDIANTES ACTIVAS
+function activeStudents(sede, generacion) {
+    var studentsActiveName = [];
+    var studentsActive;
+    var studentsPercentageActive;
+  
+    for (var h = 0; h < data[sede][generacion].students.length; h++) {
+        if (data[sede][generacion].students[h].active === true) {
+            studentsActiveName.push(data[sede][generacion].students[h].name);
+            studentsActive = studentsActiveName.length;
+        }
+    }
+    return studentsActiveName;
+  }
+  
+  
+  var nameActiveStudents = document.getElementsByClassName("nameStudent");
+  console.log(nameActiveStudents.length);
+  
+  //FOR PARA IMPRIMIR NOMBRE DE LAS ESTUDIANTES
+  for(var i = 0; i < nameActiveStudents.length; i++) {
+    var nameStudents = activeStudents("AQP", "2016-2");
+    nameActiveStudents[i].innerHTML = nameStudents[i];
+  }
