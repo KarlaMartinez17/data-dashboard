@@ -46,12 +46,14 @@ p.countries {
   width: 110px;
   text-align: center;
   margin: 0 auto;
+  font-weight: bolder;
 }
 
 p.countries:hover {
   cursor: pointer;
   background-color: #FF009E;
   color: white;
+  font-weight: bolder;
 }
 
 .hide {
@@ -75,21 +77,23 @@ p.countries:hover {
   z-index: 1;
 }
 
-.submenu2 {
+  .submenu2 {
     position: relative;
     width: 110px;
     overflow: visible;
     padding: 1em;
     cursor: pointer;
-    background-color: #fed922;
+    background-color: #f8c017;
     color: white;
     border-radius: 10px;
     margin-top: 2px;
     text-align: center;
+    font-weight: bolder;
 }
 
 .submenu2:hover{
-  background-color: #fed922cc
+  background-color:#ffa000;
+  font-weight: bolder;
 }
 
 .generation {
@@ -102,9 +106,10 @@ p.countries:hover {
 .generation > li {
   padding: 1em;
   font-size: 14px;
-  background-color: #fed922;
+  background-color: #f8c017;
   width: 80px;
   border-radius: 10px;
+  font-weight: bolder;
 }
 
 .generation > li:hover{
@@ -123,15 +128,15 @@ div.graphics-summary {
   /*border: 1px solid black;*/
   width: 70%;
   height: 300px;
-  margin-left: 15%;
+  margin-left: 5%;
   margin-top: 4.5%;
 }
 
-img.lab-picture {
-  display: block;
+#main-picture{
   position: relative;
-  top: 85px;
-  width: 100%;
+  top: 3em;
+  left: 10%;
+  width: 110%;
 }
 
 img.second-graphic {
@@ -143,28 +148,31 @@ img.second-graphic {
 }
 
 button.more-info {
-  width: 100px;
-  height: 50px;
-  background: #fcd922;
-  position: absolute;
-  left: 47%;
-  display: none;
-  border-radius: 5px;
-  color: white;
-  font-size: 15px;
-  font-weight: bolder;
-}
+    width: 100px;
+    height: 50px;
+    background: #f8c017;
+    position: absolute;
+    left: 85%;
+    top: 33em;
+    display: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  
 
-button.more-info:hover{
-  background-color: #56F89A;
-}
+  button.more-info:hover{
+    background-color: #ffa000;
+  }
 
 /* HEADER / GRAPHICS SUMMARY*/
 
 div.nameCountry-generation {
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
-  weight: 600;
+  position: relative;
+  left: 5em;
 }
 
 /* QUICK ACCESS INFORMATION */
@@ -179,6 +187,7 @@ div.info-left, div.info-center, div.info-right {
   /*border: 1px solid black;*/
   padding: 10px 2%;
   display: inline-block;
+  vertical-align: top;
   margin: 30px;
 }
 
@@ -188,7 +197,7 @@ div#quickInfo {
 
 div.container-active-students {
   position: relative;
-  margin-top: 20%;
+  margin-top: 0%;
   margin-left: 5%;
 }
 
@@ -203,4 +212,29 @@ div.container-students-who-pass {
   position: absolute;
   top: 100%:
   right: 10%;
+}
+
+.second-graphic{
+  position: relative;
+  bottom: 9em;
+  left: 42em;
+  width: 25em;
+ 
+}
+
+.info-title{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.number-of-students{
+  color: blue;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.inactive-students-css{
+  color: red;
+  font-size: 30px;
+  font-weight: bolder;
 }
