@@ -105,6 +105,17 @@ button.btn-menu-anterior:hover{
 
 /* SECTION STUDENTS */
 
+img.img-user{
+  width: 80px;
+  margin-left: 80px
+}
+
+div.divTexto{
+  display: inline-block;
+  width: 30%;
+  margin-left: 100px;
+}
+
 /* SECTION COACHES */
 
 div.score-coaches, div.score-jedis {

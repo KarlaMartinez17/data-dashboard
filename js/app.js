@@ -1009,7 +1009,7 @@ function disableStudents(sede, generacion) {
 
 
     studentsPercentageLeft = ((studentsLeft * 100) / data[sede][generacion].students.length).toFixed(2) + "%";
-    console.log(data[sede][generacion].students.length);
+    //console.log(data[sede][generacion].students.length);
 
     return {
         leave: {
@@ -1033,17 +1033,17 @@ function percentageStudentsAccomplishAddPass(sede, generacion) {
   for (var c = 0; c < data[sede][generacion].ratings.length; c++) {
       studentsSprintsAccomplish.push(data[sede][generacion].ratings[c].student.cumple);
   }
-  console.log(studentsSprintsAccomplish);
+  //console.log(studentsSprintsAccomplish);
 
   for (var d = 0; d < data[sede][generacion].ratings.length; d++) {
       studentsSprintsPass.push(data[sede][generacion].ratings[d].student.supera);
   }
-  console.log(studentsSprintsPass);
+  //console.log(studentsSprintsPass);
 
   for (var e = 0; e < studentsSprintsAccomplish.length; e++) {
       totalStudentsSprintAccAddPass.push(studentsSprintsAccomplish[e] + studentsSprintsPass[e]);
   }
-  console.log(totalStudentsSprintAccAddPass);
+  //console.log(totalStudentsSprintAccAddPass);
 
   for (var f = 0; f < totalStudentsSprintAccAddPass.length; f++) {
       percentageStudentsAccAndPass += totalStudentsSprintAccAddPass[f] / data[sede][generacion].ratings.length;
@@ -1098,14 +1098,14 @@ function getActiveStudents(sede, generacion) {
               averageTech += student.sprints[j].score.tech;
               sprints.push(getSprintData(student.sprints[j]));
 
-              console.log(student.sprints[j].score.tech);
+              //console.log(student.sprints[j].score.tech);
           }
           totalSprints = averageHse + averageTech;
           minimumScoreTech = 1260 * student.sprints.length;
           minimumScoreHse = 840 * student.sprints.length;
           minimumScoreTotal = 2100 * student.sprints.length;
 
-          console.log(averageTech);
+          //console.log(averageTech);
 
           if(averageTech >= minimumScoreTech) {
               passTech = true;
@@ -1144,7 +1144,7 @@ function setGeneralData(sede, generacion) {
   var percentageApprovedTechStudents = 0;
   var percentageApprovedHseStudents = 0;
 
-  console.log(trueStudents);
+  //console.log(trueStudents);
 
   for(var i = 0; i < trueStudents.length; i++) {
       if(trueStudents[i].passTotal === true) {

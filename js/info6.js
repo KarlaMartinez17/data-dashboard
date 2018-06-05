@@ -96,11 +96,10 @@ function activeStudents(sede, generacion) {
 
 
 var nameActiveStudents = document.getElementsByClassName("nameStudent");
-console.log(nameActiveStudents.length);
+//console.log(nameActiveStudents.length);
 
 //FOR PARA IMPRIMIR NOMBRE DE LAS ESTUDIANTES
 for(var i = 0; i < nameActiveStudents.length; i++) {
   var nameStudents = activeStudents("CDMX", "2017-1");
   nameActiveStudents[i].innerHTML = nameStudents[i];
 }
-
