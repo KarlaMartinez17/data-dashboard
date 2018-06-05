@@ -238,7 +238,7 @@ function activeStudents(sede, generacion) {
     nameActiveStudents[i].innerHTML = nameStudents[i];
   }
 
-      //console.log(getActiveStudents("AQP", "2016-2"));
-      //console.log(getActiveStudents("AQP", "2016-2")[0].sprints[0].hse);
-      //console.log(getActiveStudents("AQP", "2016-2")[0].sprints[0].tech);
-      //console.log(getActiveStudents("AQP", "2016-2")[0].sprints[0].total);
+      console.log(getActiveStudents("AQP", "2016-2"));
+      console.log(getActiveStudents("AQP", "2016-2")[0].sprints[0].hse);
+      console.log(getActiveStudents("AQP", "2016-2")[0].sprints[0].tech);
+      console.log(getActiveStudents("AQP", "2016-2")[0].sprints[0].total);
