@@ -104,6 +104,17 @@ var containerPercentageHseStudents= document.getElementById("percentage-hse");
 
 var nameGeneration = document.getElementById("country-generation");
 
+var graphic_1 = document.getElementById('graphic-1');
+var graphic_2 = document.getElementById('graphic-2');
+var graphic_3 = document.getElementById('graphic-3');
+var graphic_4 = document.getElementById('graphic-4');
+var graphic_5 = document.getElementById('graphic-5');
+var graphic_6 = document.getElementById('graphic-6');
+var graphic_7 = document.getElementById('graphic-7');
+var graphic_8 = document.getElementById('graphic-8');
+var graphic_9 = document.getElementById('graphic-9');
+var graphic_10 = document.getElementById('graphic-10');
+
 //Event that shows info students in Arequipa, generation 2016-2
 var gen20162AQP = document.getElementById('ar20162');
 gen20162AQP.addEventListener('click', function(){
@@ -111,6 +122,17 @@ gen20162AQP.addEventListener('click', function(){
 
   var button = document.getElementById('button-AQP20162');
   button.style.display = 'block';
+
+  graphic_1.style.display = 'block';
+  graphic_2.style.display = 'none';
+  graphic_3.style.display = 'none';
+  graphic_4.style.display = 'none';
+  graphic_5.style.display = 'none';
+  graphic_6.style.display = 'none';
+  graphic_7.style.display = 'none';
+  graphic_8.style.display = 'none';
+  graphic_9.style.display = 'none';
+  graphic_10.style.display = 'none';
 
     //Active students
   containerStudents.innerHTML = activeStudents("AQP", "2016-2");
@@ -185,6 +207,17 @@ gen20171AQP.addEventListener('click', function(){
   var button = document.getElementById('button-AQP20171');
   button.style.display = 'block';
 
+  graphic_1.style.display = 'none';
+  graphic_2.style.display = 'block';
+  graphic_3.style.display = 'none';
+  graphic_4.style.display = 'none';
+  graphic_5.style.display = 'none';
+  graphic_6.style.display = 'none';
+  graphic_7.style.display = 'none';
+  graphic_8.style.display = 'none';
+  graphic_9.style.display = 'none';
+  graphic_10.style.display = 'none';
+
     //Active students
   containerStudents.innerHTML = activeStudents("AQP", "2017-1");
   //Name active students
@@ -257,6 +290,17 @@ gen20162LIM.addEventListener('click', function(){
 
   var button = document.getElementById('button-LIM20162');
   button.style.display = 'block';
+
+  graphic_1.style.display = 'none';
+  graphic_2.style.display = 'none';
+  graphic_3.style.display = 'none';
+  graphic_4.style.display = 'none';
+  graphic_5.style.display = 'block';
+  graphic_6.style.display = 'none';
+  graphic_7.style.display = 'none';
+  graphic_8.style.display = 'none';
+  graphic_9.style.display = 'none';
+  graphic_10.style.display = 'none';
 
     //Active students
   containerStudents.innerHTML = activeStudents("LIM", "2016-2");
@@ -332,6 +376,17 @@ gen20171LIM.addEventListener('click', function(){
   var button = document.getElementById('button-LIM20171');
   button.style.display = 'block';
 
+  graphic_1.style.display = 'none';
+  graphic_2.style.display = 'none';
+  graphic_3.style.display = 'none';
+  graphic_4.style.display = 'none';
+  graphic_5.style.display = 'none';
+  graphic_6.style.display = 'block';
+  graphic_7.style.display = 'none';
+  graphic_8.style.display = 'none';
+  graphic_9.style.display = 'none';
+  graphic_10.style.display = 'none';
+
     //Active students
   containerStudents.innerHTML = activeStudents("LIM", "2017-1");
   //Name active students
@@ -405,6 +460,17 @@ gen20172LIM.addEventListener('click', function(){
   var button = document.getElementById('button-LIM20172');
   button.style.display = 'block';
 
+  graphic_1.style.display = 'none';
+  graphic_2.style.display = 'none';
+  graphic_3.style.display = 'none';
+  graphic_4.style.display = 'none';
+  graphic_5.style.display = 'none';
+  graphic_6.style.display = 'none';
+  graphic_7.style.display = 'block';
+  graphic_8.style.display = 'none';
+  graphic_9.style.display = 'none';
+  graphic_10.style.display = 'none';
+
   //Active students
   containerStudents.innerHTML = activeStudents("LIM", "2017-2");
   //Name active students
@@ -477,6 +543,17 @@ gen20171MX.addEventListener('click', function(){
 
   var button = document.getElementById('button-CDMX20171');
   button.style.display = 'block';
+
+  graphic_1.style.display = 'none';
+  graphic_2.style.display = 'none';
+  graphic_3.style.display = 'block';
+  graphic_4.style.display = 'none';
+  graphic_5.style.display = 'none';
+  graphic_6.style.display = 'none';
+  graphic_7.style.display = 'none';
+  graphic_8.style.display = 'none';
+  graphic_9.style.display = 'none';
+  graphic_10.style.display = 'none';
 
       //Active students
   containerStudents.innerHTML = activeStudents("CDMX", "2017-1");
@@ -552,6 +629,17 @@ gen20172MX.addEventListener('click', function(){
   var button = document.getElementById('button-CDMX20172');
   button.style.display = 'block';
 
+  graphic_1.style.display = 'none';
+  graphic_2.style.display = 'none';
+  graphic_3.style.display = 'none';
+  graphic_4.style.display = 'block';
+  graphic_5.style.display = 'none';
+  graphic_6.style.display = 'none';
+  graphic_7.style.display = 'none';
+  graphic_8.style.display = 'none';
+  graphic_9.style.display = 'none';
+  graphic_10.style.display = 'none';
+
     //Active students
   containerStudents.innerHTML = activeStudents("CDMX", "2017-2");
   //Name active students
@@ -624,6 +712,17 @@ nameGeneration.innerHTML = 'Santiago 2016-2';
 
   var button = document.getElementById('button-SCL20162');
   button.style.display = 'block';
+
+  graphic_1.style.display = 'none';
+  graphic_2.style.display = 'none';
+  graphic_3.style.display = 'none';
+  graphic_4.style.display = 'none';
+  graphic_5.style.display = 'none';
+  graphic_6.style.display = 'none';
+  graphic_7.style.display = 'none';
+  graphic_8.style.display = 'block';
+  graphic_9.style.display = 'none';
+  graphic_10.style.display = 'none';
 
   //Active students
   containerStudents.innerHTML = activeStudents("SCL", "2016-2");
@@ -699,6 +798,17 @@ gen20171SCL.addEventListener('click', function(){
   var button = document.getElementById('button-SCL20171');
   button.style.display = 'block';
 
+  graphic_1.style.display = 'none';
+  graphic_2.style.display = 'none';
+  graphic_3.style.display = 'none';
+  graphic_4.style.display = 'none';
+  graphic_5.style.display = 'none';
+  graphic_6.style.display = 'none';
+  graphic_7.style.display = 'none';
+  graphic_8.style.display = 'none';
+  graphic_9.style.display = 'block';
+  graphic_10.style.display = 'none';
+
   //Active students
   containerStudents.innerHTML = activeStudents("SCL", "2017-1");
   //Name active students
@@ -771,6 +881,17 @@ gen20172SCL.addEventListener('click', function(){
 
   var button = document.getElementById('button-SCL20172');
   button.style.display = 'block';
+
+  graphic_1.style.display = 'none';
+  graphic_2.style.display = 'none';
+  graphic_3.style.display = 'none';
+  graphic_4.style.display = 'none';
+  graphic_5.style.display = 'none';
+  graphic_6.style.display = 'none';
+  graphic_7.style.display = 'none';
+  graphic_8.style.display = 'none';
+  graphic_9.style.display = 'none';
+  graphic_10.style.display = 'block';
 
   //Active students
   containerStudents.innerHTML = activeStudents("SCL", "2017-2");

@@ -134,6 +134,14 @@ img.lab-picture {
   width: 100%;
 }
 
+img.second-graphic {
+  display: none;
+  width: 50px
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
 button.more-info {
   width: 100px;
   height: 50px;
@@ -148,7 +156,7 @@ button.more-info {
 }
 
 button.more-info:hover{
-  background-color: black;
+  background-color: #56F89A;
 }
 
 /* HEADER / GRAPHICS SUMMARY*/
@@ -176,4 +184,23 @@ div.info-left, div.info-center, div.info-right {
 
 div#quickInfo {
   display: none;
+}
+
+div.container-active-students {
+  position: relative;
+  margin-top: 20%;
+  margin-left: 5%;
+}
+
+div.container-inactive-students {
+  float: right;
+  position: absolute;
+  top: 135%;
+  left: 35%;
+}
+
+div.container-students-who-pass {
+  position: absolute;
+  top: 100%:
+  right: 10%;
 }

@@ -100,7 +100,7 @@ button.btn-menu-anterior {
 }
 
 button.btn-menu-anterior:hover{
-  background-color: black;
+  background-color: #56F89A;;
 }
 
 /* SECTION STUDENTS */
@@ -109,8 +109,8 @@ button.btn-menu-anterior:hover{
 
 div.score-coaches, div.score-jedis {
   position: absolute;
-  top: 42%;
-  left: 50%;
+  top: 60%;
+  right: 30%;
   font-size: 50px;
 }
 
