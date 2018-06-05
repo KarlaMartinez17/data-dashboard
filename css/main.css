@@ -151,6 +151,14 @@ button.more-info:hover{
   background-color: black;
 }
 
+/* HEADER / GRAPHICS SUMMARY*/
+
+div.nameCountry-generation {
+  font-size: 20px;
+  text-align: center;
+  weight: 600;
+}
+
 /* QUICK ACCESS INFORMATION */
 
 p {

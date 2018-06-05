@@ -13,7 +13,7 @@ var showTabs = function(e){
     jedis.style.display = 'none';
 
     var scoreCoachesSCL20172 = document.getElementById('score-coachesSCL20172');
-    scoreCoachesSCL20172.innerHTML = averageCoaches("SCL", "2017-2");
+    scoreCoachesSCL20172.innerHTML = averageCoaches("SCL", "2017-2").toFixed(2);
 
   } else if(selectedTab == 'tabJedi') {
     students.style.display = 'none';
@@ -21,7 +21,7 @@ var showTabs = function(e){
     jedis.style.display = 'block';
 
     var scoreJedisSCL20172 = document.getElementById('score-jedisSCL20172');
-    scoreJedisSCL20172.innerHTML = averageJediMasters("SCL", "2017-2");
+    scoreJedisSCL20172.innerHTML = averageJediMasters("SCL", "2017-2").toFixed(2);
   }
 }
 

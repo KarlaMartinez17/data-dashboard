@@ -13,7 +13,7 @@ var showTabs = function(e){
     jedis.style.display = 'none';
 
     var scoreCoachesLIM20162 = document.getElementById('score-coachesLIM20162');
-    scoreCoachesLIM20162.innerHTML = averageCoaches("LIM", "2016-2");
+    scoreCoachesLIM20162.innerHTML = averageCoaches("LIM", "2016-2").toFixed(2);
 
   } else if(selectedTab == 'tabJedi') {
     students.style.display = 'none';
@@ -21,7 +21,7 @@ var showTabs = function(e){
     jedis.style.display = 'block';
 
     var scoreJedisLIM20162 = document.getElementById('score-jedisLIM20162');
-    scoreJedisLIM20162.innerHTML = averageJediMasters("LIM", "2016-2");
+    scoreJedisLIM20162.innerHTML = averageJediMasters("LIM", "2016-2").toFixed(2);
   }
 }
 

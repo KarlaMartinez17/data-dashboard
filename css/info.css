@@ -85,6 +85,24 @@ div.divTexto {
   box-sizing: border-box;
 }
 
+button.btn-menu-anterior {
+  width: 80px;
+  height: 40px;
+  background: #fcd922;
+  position: absolute;
+  top: 17%;
+  right: 16%;
+  display: block;
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+button.btn-menu-anterior:hover{
+  background-color: black;
+}
+
 /* SECTION STUDENTS */
 
 /* SECTION COACHES */

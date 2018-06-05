@@ -83,11 +83,11 @@ function inactiveStudents(sede, generacion) {
 //console.log(activeStudents("AQP", "2017-1"));
 
 var containerStudents = document.getElementById('numberOfstudents');
+var containerNameActiveStudents = document.getElementById("name-active-students");
+var containerPercentageActiveStudents = document.getElementById("percentage-active-students");
 
 var containerInactiveStudents = document.getElementById('inactive-students');
-
 var containerNameInactiveStudents = document.getElementById("name-inactive-students");
-
 var containerPercentageInactiveStudents = document.getElementById("percentage-inactive-students");
 
 var containerApprovedStudents= document.getElementById("info-students");
@@ -102,23 +102,27 @@ var containerQuantityHseStudents= document.getElementById("quantity-hse");
 
 var containerPercentageHseStudents= document.getElementById("percentage-hse");
 
-
+var nameGeneration = document.getElementById("country-generation");
 
 //Event that shows info students in Arequipa, generation 2016-2
 var gen20162AQP = document.getElementById('ar20162');
 gen20162AQP.addEventListener('click', function(){
+  nameGeneration.innerHTML = 'Arequipa 2016-2';
+
   var button = document.getElementById('button-AQP20162');
   button.style.display = 'block';
 
     //Active students
   containerStudents.innerHTML = activeStudents("AQP", "2016-2");
+  //Name active students
+  containerNameActiveStudents.innerHTML = ableStudents("AQP", "2016-2").leave.nameStudents;
+  //Percentage active students
+  containerPercentageActiveStudents.innerHTML = ableStudents("AQP", "2016-2").leave.percentageStudents;
 
   //Inactive students
   containerInactiveStudents.innerHTML = inactiveStudents("AQP", "2016-2");
-
   //Name inactive students
   containerNameInactiveStudents.innerHTML = disableStudents("AQP", "2016-2").leave.nameStudents;
-
   //Percentage inactive students
   containerPercentageInactiveStudents.innerHTML = disableStudents("AQP", "2016-2").leave.percentageStudents;
 
@@ -176,18 +180,22 @@ gen20162AQP.addEventListener('click', function(){
 //Event that shows info students in Arequipa, generation 2017-1
 var gen20171AQP = document.getElementById('ar20171');
 gen20171AQP.addEventListener('click', function(){
+  nameGeneration.innerHTML = 'Arequipa 2017-1';
+
   var button = document.getElementById('button-AQP20171');
   button.style.display = 'block';
 
     //Active students
   containerStudents.innerHTML = activeStudents("AQP", "2017-1");
+  //Name active students
+  containerNameActiveStudents.innerHTML = ableStudents("AQP", "2017-1").leave.nameStudents;
+  //Percentage active students
+  containerPercentageActiveStudents.innerHTML = ableStudents("AQP", "2017-1").leave.percentageStudents;
 
   //Inactive students
   containerInactiveStudents.innerHTML = inactiveStudents("AQP", "2017-1");
-
   //Name inactive students
   containerNameInactiveStudents.innerHTML = disableStudents("AQP", "2017-1").leave.nameStudents;
-
   //Percentage inactive students
   containerPercentageInactiveStudents.innerHTML = disableStudents("AQP", "2017-1").leave.percentageStudents;
 
@@ -245,18 +253,23 @@ gen20171AQP.addEventListener('click', function(){
 //Event that shows info students in Lima, generation 2016-2
 var gen20162LIM = document.getElementById('li20162');
 gen20162LIM.addEventListener('click', function(){
+  nameGeneration.innerHTML = 'Lima 2016-2';
+
   var button = document.getElementById('button-LIM20162');
   button.style.display = 'block';
 
     //Active students
   containerStudents.innerHTML = activeStudents("LIM", "2016-2");
+  //Name active students
+  containerNameActiveStudents.innerHTML = ableStudents("LIM", "2016-2").leave.nameStudents;
+  //Percentage active students
+  containerPercentageActiveStudents.innerHTML = ableStudents("LIM", "2016-2").leave.percentageStudents;
+
 
   //Inactive students
   containerInactiveStudents.innerHTML = inactiveStudents("LIM", "2016-2");
-
   //Name inactive students
   containerNameInactiveStudents.innerHTML = disableStudents("LIM", "2016-2").leave.nameStudents;
-
   //Percentage inactive students
   containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2016-2").leave.percentageStudents;
 
@@ -314,18 +327,22 @@ gen20162LIM.addEventListener('click', function(){
 //Event that shows info students in Lima, generation 2017-1
 var gen20171LIM = document.getElementById('li20171');
 gen20171LIM.addEventListener('click', function(){
+  nameGeneration.innerHTML = 'Lima 2017-1';
+
   var button = document.getElementById('button-LIM20171');
   button.style.display = 'block';
 
     //Active students
   containerStudents.innerHTML = activeStudents("LIM", "2017-1");
+  //Name active students
+  containerNameActiveStudents.innerHTML = ableStudents("LIM", "2017-1").leave.nameStudents;
+  //Percentage active students
+  containerPercentageActiveStudents.innerHTML = ableStudents("LIM", "2017-1").leave.percentageStudents;
 
     //Inactive students
    containerInactiveStudents.innerHTML = inactiveStudents("LIM", "2017-1");
-
    //Name inactive students
   containerNameInactiveStudents.innerHTML = disableStudents("LIM", "2017-1").leave.nameStudents;
-
   //Percentage inactive students
   containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2017-1").leave.percentageStudents;
 
@@ -334,16 +351,16 @@ gen20171LIM.addEventListener('click', function(){
 
   //Percentage total approved students
   containerPercentageTotalStudents.innerHTML = "Porcentaje Total: " + setGeneralData("LIM", "2017-1").total.percentageApproved;
- 
+
   //Quantity approved tech students
   containerQuantityTechStudents.innerHTML =  "Cantidad Tech : " + setGeneralData("LIM", "2017-1").tech.approvedStudents;
- 
+
   //Percentage approved tech students
   containerPercentageTechStudents.innerHTML = "Porcentaje Tech: " + setGeneralData("LIM", "2017-1").tech.percentageApproved;
- 
+
   //Quantity approved hse students
   containerQuantityHseStudents.innerHTML =  "Cantidad HSE: " + setGeneralData("LIM", "2017-1").hse.approvedStudents;
- 
+
   //Percentage approved hse students
   containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("LIM", "2017-1").hse.percentageApproved;
 
@@ -383,18 +400,22 @@ gen20171LIM.addEventListener('click', function(){
 //Event that shows info students in Lima, generation 2017-2
 var gen20172LIM = document.getElementById('li20172');
 gen20172LIM.addEventListener('click', function(){
+  nameGeneration.innerHTML = 'Lima 2017-2';
+
   var button = document.getElementById('button-LIM20172');
   button.style.display = 'block';
 
   //Active students
   containerStudents.innerHTML = activeStudents("LIM", "2017-2");
+  //Name active students
+  containerNameActiveStudents.innerHTML = ableStudents("LIM", "2017-2").leave.nameStudents;
+  //Percentage active students
+  containerPercentageActiveStudents.innerHTML = ableStudents("LIM", "2017-2").leave.percentageStudents;
 
   //Inactive students
  containerInactiveStudents.innerHTML = inactiveStudents("LIM", "2017-2");
-
  //Name inactive students
  containerNameInactiveStudents.innerHTML = disableStudents("LIM", "2017-2").leave.nameStudents;
-
  //Percentage inactive students
  containerPercentageInactiveStudents.innerHTML = disableStudents("LIM", "2017-2").leave.percentageStudents;
 
@@ -452,18 +473,23 @@ containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("
 //Event that shows info students in Cd Mexico, generation 2017-1
 var gen20171MX = document.getElementById('cdmx20171');
 gen20171MX.addEventListener('click', function(){
+  nameGeneration.innerHTML = 'Cd México 2017-1';
+
   var button = document.getElementById('button-CDMX20171');
   button.style.display = 'block';
 
       //Active students
   containerStudents.innerHTML = activeStudents("CDMX", "2017-1");
+  //Name active students
+  containerNameActiveStudents.innerHTML = ableStudents("CDMX", "2017-1").leave.nameStudents;
+  //Percentage active students
+  containerPercentageActiveStudents.innerHTML = ableStudents("CDMX", "2017-1").leave.percentageStudents;
+
 
   //Inactive students
   containerInactiveStudents.innerHTML = inactiveStudents("CDMX", "2017-1");
-
   //Name inactive students
   containerNameInactiveStudents.innerHTML = disableStudents("CDMX", "2017-1").leave.nameStudents;
-
   //Percentage inactive students
   containerPercentageInactiveStudents.innerHTML = disableStudents("CDMX", "2017-1").leave.percentageStudents;
 
@@ -521,18 +547,22 @@ gen20171MX.addEventListener('click', function(){
 //Event that shows info students in Cd Mexico, generation 2017-2
 var gen20172MX = document.getElementById('cdmx20172');
 gen20172MX.addEventListener('click', function(){
+  nameGeneration.innerHTML = 'Cd México 2017-2';
+
   var button = document.getElementById('button-CDMX20172');
   button.style.display = 'block';
 
     //Active students
   containerStudents.innerHTML = activeStudents("CDMX", "2017-2");
+  //Name active students
+  containerNameActiveStudents.innerHTML = ableStudents("CDMX", "2017-2").leave.nameStudents;
+  //Percentage active students
+  containerPercentageActiveStudents.innerHTML = ableStudents("CDMX", "2017-2").leave.percentageStudents;
 
   //Inactive students
  containerInactiveStudents.innerHTML = inactiveStudents("CDMX", "2017-2");
-
  //Name inactive students
  containerNameInactiveStudents.innerHTML = disableStudents("CDMX", "2017-2").leave.nameStudents;
-
  //Percentage inactive students
  containerPercentageInactiveStudents.innerHTML = disableStudents("CDMX", "2017-2").leave.percentageStudents;
 
@@ -590,18 +620,23 @@ gen20172MX.addEventListener('click', function(){
 //Event that shows info students in Santiago, generation 2016-2
 var gen20162SCL = document.getElementById('s20162');
 gen20162SCL.addEventListener('click', function(){
+nameGeneration.innerHTML = 'Santiago 2016-2';
+
   var button = document.getElementById('button-SCL20162');
   button.style.display = 'block';
 
   //Active students
   containerStudents.innerHTML = activeStudents("SCL", "2016-2");
+  //Name active students
+  containerNameActiveStudents.innerHTML = ableStudents("SCL", "2016-2").leave.nameStudents;
+  //Percentage active students
+  containerPercentageActiveStudents.innerHTML = ableStudents("SCL", "2016-2").leave.percentageStudents;
+
 
     //Inactive students
    containerInactiveStudents.innerHTML = inactiveStudents("SCL", "2016-2");
-
    //Name inactive students
   containerNameInactiveStudents.innerHTML = disableStudents("SCL", "2016-2").leave.nameStudents;
-
   //Percentage inactive students
   containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2016-2").leave.percentageStudents;
 
@@ -659,18 +694,22 @@ gen20162SCL.addEventListener('click', function(){
 //Event that shows info students in Santiago, generation 2017-1
 var gen20171SCL = document.getElementById('s20171');
 gen20171SCL.addEventListener('click', function(){
+  nameGeneration.innerHTML = 'Santiago 2017-1';
+
   var button = document.getElementById('button-SCL20171');
   button.style.display = 'block';
 
   //Active students
   containerStudents.innerHTML = activeStudents("SCL", "2017-1");
+  //Name active students
+  containerNameActiveStudents.innerHTML = ableStudents("SCL", "2017-1").leave.nameStudents;
+  //Percentage active students
+  containerPercentageActiveStudents.innerHTML = ableStudents("SCL", "2017-1").leave.percentageStudents;
 
     //Inactive students
    containerInactiveStudents.innerHTML = inactiveStudents("SCL", "2017-1");
-
    //Name inactive students
   containerNameInactiveStudents.innerHTML = disableStudents("SCL", "2017-1").leave.nameStudents;
-
   //Percentage inactive students
   containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2017-1").leave.percentageStudents;
 
@@ -728,18 +767,22 @@ containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("
 //Event that shows info students in Santiago, generation 2017-2
 var gen20172SCL = document.getElementById('s20172');
 gen20172SCL.addEventListener('click', function(){
+  nameGeneration.innerHTML = 'Santiago 2017-2';
+
   var button = document.getElementById('button-SCL20172');
   button.style.display = 'block';
 
   //Active students
   containerStudents.innerHTML = activeStudents("SCL", "2017-2");
+  //Name active students
+  containerNameActiveStudents.innerHTML = ableStudents("SCL", "2017-2").leave.nameStudents;
+  //Percentage active students
+  containerPercentageActiveStudents.innerHTML = ableStudents("SCL", "2017-2").leave.percentageStudents;
 
     //Inactive students
    containerInactiveStudents.innerHTML = inactiveStudents("SCL", "2017-2");
-
    //Name inactive students
   containerNameInactiveStudents.innerHTML = disableStudents("SCL", "2017-2").leave.nameStudents;
-
   //Percentage inactive students
   containerPercentageInactiveStudents.innerHTML = disableStudents("SCL", "2017-2").leave.percentageStudents;
 
@@ -793,6 +836,38 @@ containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("
     chart.draw(data, options);
   }
 })
+
+
+//FUNCIÓN NOMBRE Y PORCENTAJE ESTUDIANTES ACTIVAS
+function ableStudents(sede, generacion) {
+    var studentsName = [];
+    var students;
+    var studentsPercentageAndName = [];
+
+    for (var h = 0; h < data[sede][generacion].students.length; h++) {
+        if (data[sede][generacion].students[h].active === true) {
+            studentsName.push(data[sede][generacion].students[h].name);
+            students = studentsName.length;
+        }
+    }
+
+    var stringNameStudents = studentsName.join("<br>");
+
+
+    studentsPercentage = ((students * 100) / data[sede][generacion].students.length).toFixed(2) + "%";
+    //console.log(data[sede][generacion].students.length);
+
+    return {
+        leave: {
+          nameStudents: stringNameStudents,
+          percentageStudents: studentsPercentage
+        }
+    }
+  }
+
+//console.log(ableStudents("AQP", "2016-2"));
+//console.log(ableStudents("AQP", "2017-1"));
+
 
 
 

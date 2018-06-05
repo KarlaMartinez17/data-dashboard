@@ -13,7 +13,7 @@ var showTabs = function(e){
     jedis.style.display = 'none';
 
     var scoreCoachesCDMX20171 = document.getElementById('score-coachesCDMX20171');
-    scoreCoachesCDMX20171.innerHTML = averageCoaches("CDMX", "2017-1");
+    scoreCoachesCDMX20171.innerHTML = averageCoaches("CDMX", "2017-1").toFixed(2);
 
   } else if(selectedTab == 'tabJedi') {
     students.style.display = 'none';
@@ -21,7 +21,7 @@ var showTabs = function(e){
     jedis.style.display = 'block';
 
     var scoreJedisCDMX20171 = document.getElementById('score-jedisCDMX20171');
-    scoreJedisCDMX20171.innerHTML = averageJediMasters("CDMX", "2017-1");
+    scoreJedisCDMX20171.innerHTML = averageJediMasters("CDMX", "2017-1").toFixed(2);
   }
 }
 
