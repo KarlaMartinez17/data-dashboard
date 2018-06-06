@@ -184,7 +184,7 @@ gen20162AQP.addEventListener('click', function(){
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
     data.addRows([
-      ['Estudaintes activas', 1.21],
+      ['Estudiantes activas', 1.21],
       ['Estudiantes que desertaron', 1.38],
     ]);
 
@@ -268,7 +268,7 @@ gen20171AQP.addEventListener('click', function(){
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
     data.addRows([
-      ['Estudaintes activas', 1.4],
+      ['Estudiantes activas', 1.4],
       ['Estudiantes que desertaron', 1.22],
     ]);
 
@@ -353,7 +353,7 @@ gen20162LIM.addEventListener('click', function(){
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
     data.addRows([
-      ['Estudaintes activas', 1.2],
+      ['Estudiantes activas', 1.2],
       ['Estudiantes que desertaron', 1.42],
     ]);
 
@@ -437,7 +437,7 @@ gen20171LIM.addEventListener('click', function(){
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
     data.addRows([
-      ['Estudaintes activas', 2.8],
+      ['Estudiantes activas', 2.8],
       ['Estudiantes que desertaron', 1.16],
     ]);
 
@@ -521,7 +521,7 @@ containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
     data.addRows([
-      ['Estudaintes activas', 2.1],
+      ['Estudiantes activas', 2.1],
       ['Estudiantes que desertaron', 2.8],
     ]);
 
@@ -606,7 +606,7 @@ gen20171MX.addEventListener('click', function(){
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
     data.addRows([
-      ['Estudaintes activas', 1.68],
+      ['Estudiantes activas', 1.68],
       ['Estudiantes que desertaron', 2.8],
     ]);
 
@@ -690,7 +690,7 @@ gen20172MX.addEventListener('click', function(){
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
     data.addRows([
-      ['Estudaintes activas', 2.35],
+      ['Estudiantes activas', 2.35],
       ['Estudiantes que desertaron', 2.79],
     ]);
 
@@ -775,7 +775,7 @@ nameGeneration.innerHTML = 'Santiago 2016-2';
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
     data.addRows([
-      ['Estudaintes activas', 1.05],
+      ['Estudiantes activas', 1.05],
       ['Estudiantes que desertaron', 2.8],
     ]);
 
@@ -859,7 +859,7 @@ containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
     data.addRows([
-      ['Estudaintes activas', 1.63],
+      ['Estudiantes activas', 1.63],
       ['Estudiantes que desertaron', 1.05],
     ]);
 
@@ -943,7 +943,7 @@ containerPercentageHseStudents.innerHTML = "Porcentaje HSE: " + setGeneralData("
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
     data.addRows([
-      ['Estudaintes activas', 1.28],
+      ['Estudiantes activas', 1.28],
       ['Estudiantes que desertaron', 1.5],
     ]);
 
