@@ -116,6 +116,25 @@ div.divTexto{
   margin-left: 100px;
 }
 
+div.containerSprint1, div.containerSprint2, div.containerSprint3, div.containerSprint4 {
+  display: inline-block;
+}
+
+div.containerSprint2{
+  position: absolute;
+  left: 30%;
+}
+
+div.containerSprint3{
+  position: absolute;
+  left: 53%;
+}
+
+div.containerSprint4{
+  position: absolute;
+  right: 2%;
+}
+
 /* SECTION COACHES */
 
 div.score-coaches, div.score-jedis {
