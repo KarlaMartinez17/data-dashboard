@@ -140,8 +140,10 @@ div.containerSprint4{
 div.score-coaches, div.score-jedis {
   position: absolute;
   top: 60%;
-  right: 30%;
-  font-size: 50px;
+  right: 18%;
+  font-size: 80px;
+  color: deeppink;
+  font-weight: bolder;
 }
 
 

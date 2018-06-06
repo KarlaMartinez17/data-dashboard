@@ -129,7 +129,7 @@ div.graphics-summary {
   width: 70%;
   height: 300px;
   margin-left: 5%;
-  margin-top: 4.5%;
+  margin-top: 5em;
 }
 
 #main-picture{
@@ -148,18 +148,18 @@ img.second-graphic {
 }
 
 button.more-info {
-    width: 100px;
-    height: 50px;
-    background: #f8c017;
-    position: absolute;
-    left: 85%;
-    top: 33em;
-    display: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 15px;
-    font-weight: bolder;
-  }
+  width: 100px;
+  height: 50px;
+  background: #f8c017;
+  right: 94px;
+  top: -3em;
+  display: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  position: absolute;
+}
   
 
   button.more-info:hover{
@@ -183,7 +183,6 @@ p {
 
 div.info-left, div.info-center, div.info-right {
   width: 24%;
-  height: 150px;
   /*border: 1px solid black;*/
   padding: 10px 2%;
   display: inline-block;
@@ -194,7 +193,7 @@ div.info-left, div.info-center, div.info-right {
 div#quickInfo {
   display: none;
 }
-
+/*
 div.container-active-students {
   position: relative;
   margin-top: 0%;
@@ -212,13 +211,13 @@ div.container-students-who-pass {
   position: absolute;
   top: 100%:
   right: 10%;
-}
+}*/
 
 .second-graphic{
   position: relative;
-  bottom: 9em;
-  left: 42em;
-  width: 25em;
+  bottom: 1px;
+  left: 40em;
+  width: 30em;
  
 }
 
@@ -237,4 +236,8 @@ div.container-students-who-pass {
   color: red;
   font-size: 30px;
   font-weight: bolder;
+}
+
+.container{
+  margin-top: -14em;
 }
