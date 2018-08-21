@@ -1,210 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Dashboard Laboratoria</title>
-    <link rel="stylesheet" href="css/main.css">
-    <!--Load the AJAX API-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  </head>
-  <body>
-   <!--Logo-->
-    <div class="container-logo">
-      <div class="main-logo">
-        <h1>Dashboard</h1>
-        <img class="lab-logo" src="assets/images/laboratoria_logo.png" alt="laboratoria-logo">
-      </div>
-    </div>
-    <hr>
-    <!--Navigation-->
-    <nav>
-     <div class="container-countries">
-      <ul>
-        <li class="submenu">
-          <p class="countries">Perú</p>
-          <ul class="hide sede-cities">
-            <li class="submenu2 first-element">Arequipa
-              <ul class="generation hide">
-                <li id="ar20162" class="ar-generation ar-20162">2016-2</li>
-                <li id="ar20171" class="ar-generation ar-20171">2017-1</li>
-              </ul>
-            </li>
-            <li class="submenu2">Lima
-              <ul class="generation hide">
-                <li id="li20162" class="li-generation li-20162">2016-2</li>
-                <li id="li20171" class="li-generation li-20171">2017-1</li>
-                <li id="li20172" class="li-generation li-20172">2017-2</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="submenu">
-          <p class="countries">México</p>
-          <ul class="hide sede-cities">
-            <li class="submenu2 first-element">Cd México
-              <ul class="generation hide">
-                <li id="cdmx20171" class="cdmx-generation cdmx-20171">2017-1</li>
-                <li id="cdmx20172" class="cdmx-generation cdmx-20172">2017-2</li>
-              </ul>
-            </li>
-            <li class="submenu2">Guadalajara
-            </li>
-          </ul>
-        </li>
-        <li class="submenu">
-        <p class="countries">Chile</h3>
-         <ul class="hide sede-cities">
-          <li class="submenu2 first-element">Santiago
-           <ul class="generation hide">
-             <li id="s20162" class="s-generation s-20162">2016-2</li>
-             <li id="s20171" class="s-generation s-20171">2017-1</li>
-             <li id="s20172" class="s-generation s-20181">2017-2</li>
-           </ul>
-          </li>
-          </li>
-         </ul>
-        <li class="submenu">
-        <p class="countries">Brasil</p>
-         <ul class="hide sede-cities">
-          <li class="submenu2 first-element">San Pablo
-          </li>
-         </ul>
-        </li>
-      </ul>
-     </div>
-    </nav>
-    <!-- Header / Graphics Summary -->
-    <header>
-    <div class="container-header">
-      <div class="graphics-summary">
-      </br>
-      <b><div class="nameCountry-generation" id="country-generation">
-       </div></b>
-        <div class="">
-          <img id="main-picture" class="lab-picture" src="assets/images/lab-picture.png" alt="lab-picture">
-        </div>
-      <!--Div that will hold the pie chart-->
-    <div id="chart_div">
-    </div>
-      </div>
-      
-    </div>
-    </header>
-    <!-- Quick Access Information -->
-    <div id="quickInfo" class="container">
-      <div class="">
-        <div class="second-graphic">
-          <img id="graphic-1" class="second-graphic" src="assets/images/AQP20162.png" alt="graphic">
-          <img id="graphic-2" class="second-graphic" src="assets/images/AQP2017-1.png" alt="graphic">
-          <img id="graphic-3" class="second-graphic" src="assets/images/CDMX20171.png" alt="graphic">
-          <img id="graphic-4" class="second-graphic" src="assets/images/CDMX20172.png" alt="graphic">
-          <img id="graphic-5" class="second-graphic" src="assets/images/LIM20162.png" alt="graphic">
-          <img id="graphic-6" class="second-graphic" src="assets/images/LIM20171.png" alt="graphic">
-          <img id="graphic-7" class="second-graphic" src="assets/images/LIM20172.png" alt="graphic">
-          <img id="graphic-8" class="second-graphic" src="assets/images/SCL20162.png" alt="graphic">
-          <img id="graphic-9" class="second-graphic" src="assets/images/SCL20171.png" alt="graphic">
-          <img id="graphic-10" class="second-graphic" src="assets/images/SCL20172.png" alt="graphic">
-        </div>
-      </div>
-      <div class="container-active-students quick-info info-left">
-        <p class="info-title">Estudiantes activas</p>
-        <div class="number-of-students" id="numberOfstudents">
-        </div>
-        <br>
-        <div id="name-active-students">
-        </div>
-        <br>
-        <div id="percentage-active-students">
-        </div>
-      </div>
-      <div  class="container-inactive-students quick-info info-center">
-        <div>
-          <p class="info-title">Estudiantes que desertaron</p>
-          <div class="inactive-students-css" id="inactive-students">
-          </div>
-          <br>
-          <div id="name-inactive-students">
-          </div>
-          <br>
-          <div id="percentage-inactive-students">
-          </div>
-        </div>
-      </div>
-      <div class="container-students-who-pass quick-info info-right">
-        <div>
-          <p class="info-title">Estudiantes activas que pasan el criterio minimo de evaluación (>= 70%)</p>
-        </div>
-        <div id="info-students">
-        </div>
-        <div id="percentage-total">
-        </div>
-        <br>
-        <div id="quantity-tech">
-        </div>
-        <div id="percentage-tech">
-        </div>
-        <br>
-        <div id="quantity-hse">
-        </div>
-        <div id="percentage-hse">
-        </div>
-      </div>
-    </div>
-    <div style="position: relative;">
-      <a href="AQP20162.html">
-        <button id="button-AQP20162" class="more-info btn-AQP20162" type="button" name="button">
-          Más información
-        </button>
-      </a>
-      <a href="AQP20171.html">
-        <button id="button-AQP20171" class="more-info btn-AQP20171" type="button" name="button">
-          Más información
-        </button>
-      </a>
-      <a href="LIM20162.html">
-        <button id="button-LIM20162" class="more-info btn-LIM20162" type="button" name="button">
-          Más información
-        </button>
-      </a>
-      <a href="LIM20171.html">
-        <button id="button-LIM20171" class="more-info btn-LIM20171" type="button" name="button">
-          Más información
-        </button>
-      </a>
-      <a href="LIM20172.html">
-        <button id="button-LIM20172" class="more-info btn-LIM20172" type="button" name="button">
-          Más información
-        </button>
-      </a>
-      <a href="CDMX20171.html">
-        <button id="button-CDMX20171" class="more-info btn-CDMX20171" type="button" name="button">
-          Más información
-        </button>
-      </a>
-      <a href="CDMX20172.html">
-        <button id="button-CDMX20172" class="more-info btn-CDMX20172" type="button" name="button">
-          Más información
-        </button>
-      </a>
-      <a href="SCL20162.html">
-        <button id="button-SCL20162" class="more-info btn-SCL20162" type="button" name="button">
-          Más información
-        </button>
-      </a>
-      <a href="SCL20171.html">
-        <button id="button-SCL20171" class="more-info btn-SCL20171" type="button" name="button">
-          Más información
-        </button>
-      </a>
-      <a href="SCL20172.html">
-        <button id="button-SCL20172" class="more-info btn-SCL20172" type="button" name="button">
-          Más información
-        </button>
-      </a>
-    </div>
-    <!-- Database -->
-		<script src="js/data.js"></script>
-		<!-- Files JS -->
-    <script src="js/app.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <select name="" id="sedes">
+    <!-- <option value="AQP">AQP</option>
+    <option value="CDMX">CDMX</option>
+    <option value="LIM">LIM</option>
+    <option value="SCL">SCL</option> -->
+  </select>
+  <select name="" id="generaciones">
+  </select>
+  <div id="students">
+  <!-- <div class="studentTemplate">
+    <h3>name</h3>
+    <img src="" alt="">
+  </div>  -->
+</div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>
